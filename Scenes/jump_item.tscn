@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://dltn6tg8bqi82"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_66rq1"]
+top_radius = 0.8
+bottom_radius = 0.8
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lopai"]
+albedo_color = Color(0.831373, 0.94902, 0, 1)
+
+[node name="JumpItem" type="MeshInstance3D"]
+mesh = SubResource("CylinderMesh_66rq1")
+surface_material_override/0 = SubResource("StandardMaterial3D_lopai")

@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://yfbmkuh1wgus"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_plm75"]
+size = Vector3(1.6, 2, 1.6)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7diem"]
+albedo_color = Color(1, 0, 1, 1)
+
+[node name="EndItem" type="MeshInstance3D"]
+mesh = SubResource("BoxMesh_plm75")
+surface_material_override/0 = SubResource("StandardMaterial3D_7diem")

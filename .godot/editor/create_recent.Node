@@ -1,0 +1,10 @@
+Timer
+CollisionShape3D
+Area3D
+MeshInstance3D
+StaticBody3D
+RigidBody3D
+CharacterBody3D
+Node3D
+Camera3D
+DirectionalLight3D

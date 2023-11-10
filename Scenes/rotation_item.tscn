@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://7xwax45ubn0o"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_fegbe"]
+radius = 0.8
+height = 1.6
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vuvjl"]
+albedo_color = Color(1, 0, 0, 1)
+
+[node name="RotationItem" type="MeshInstance3D"]
+mesh = SubResource("SphereMesh_fegbe")
+surface_material_override/0 = SubResource("StandardMaterial3D_vuvjl")
