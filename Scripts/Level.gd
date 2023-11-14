@@ -44,11 +44,12 @@ func LoadLevel(index: int):
 	character.tile = tile
 	tile.add_child(character)
 	
-	monster = load(MyMonster.MonsterScenePath).instantiate()
-	monster.speed = Vector3(level_data[index]["monster_speed_x"], level_data[index]["monster_speed_y"], level_data[index]["monster_speed_z"])
-	tile = tile_map.GetTile(level_data[index]["monster_tile_index_x"], level_data[index]["monster_tile_index_z"])
-	monster.position = tile.GetGrid(level_data[index]["monster_grid_index_x"], level_data[index]["monster_grid_index_z"]).position
-	monster.position.y = 1
-	monster.tile = tile
-	tile.add_child(monster)
+	if level_data[index]["has_monster"] == 1:
+		monster = load(MyMonster.MonsterScenePath).instantiate()
+		monster.speed = Vector3(level_data[index]["monster_speed_x"], level_data[index]["monster_speed_y"], level_data[index]["monster_speed_z"])
+		tile = tile_map.GetTile(level_data[index]["monster_tile_index_x"], level_data[index]["monster_tile_index_z"])
+		monster.position = tile.GetGrid(level_data[index]["monster_grid_index_x"], level_data[index]["monster_grid_index_z"]).position
+		monster.position.y = 1
+		monster.tile = tile
+		tile.add_child(monster)
 	return

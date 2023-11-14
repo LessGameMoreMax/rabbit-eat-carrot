@@ -1,22 +1,237 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1699629380
+::res://::1699968807
 icon.svg::CompressedTexture2D::754928274719144015::1699080875::1699080880::1::::<><>::
 Initialize.gd::GDScript::-1::1699628494::0::1::::MyConfig<>Node3D<>::
-README.md::TextFile::-1::1699629215::0::1::::<><>::
-root.tscn::PackedScene::3780272437082336814::1699628610::0::1::::<><>::res://Initialize.gd<>res://Scripts/Level.gd<>res://SelectManager.gd
+README.md::TextFile::-1::1699928751::0::1::::<><>::
+root.tscn::PackedScene::3780272437082336814::1699629434::0::1::::<><>::res://Initialize.gd<>res://Scripts/Level.gd<>res://SelectManager.gd
 SelectManager.gd::GDScript::-1::1699628535::0::1::::MySelectManager<>Camera3D<>::
 Tile.gd::GDScript::-1::1699627588::0::1::::MyTile<>MeshInstance3D<>::
-::res://Scenes/::1699629285
+::res://Homework Of Game Level Design/::1699928498
+grid.json::JSON::-1::1699599547::0::1::::<><>::
+level.json::JSON::-1::1699625632::0::1::::<><>::
+tile.json::JSON::-1::1699628142::0::1::::<><>::
+tilemap.json::JSON::-1::1699627886::0::1::::<><>::
+::res://Homework Of Game Level Design/logs/::1699928497
+godot2023-11-10T23.01.11.log::TextFile::-1::1699628471::0::1::::<><>::
+godot2023-11-10T23.01.20.log::TextFile::-1::1699628480::0::1::::<><>::
+godot2023-11-10T23.02.20.log::TextFile::-1::1699628540::0::1::::<><>::
+godot2023-11-10T23.17.14.log::TextFile::-1::1699629434::0::1::::<><>::
+godot.log::TextFile::-1::1699629438::0::1::::<><>::
+::res://Homework Of Game Level Design/shader_cache/::1699928498
+::res://Homework Of Game Level Design/shader_cache/BlitShaderRD/::1699928497
+::res://Homework Of Game Level Design/shader_cache/BlitShaderRD/8bb8c904372e3085c2a81cc74364fc612b8cefcfb78cbe8b0ee6dcb4613b7602/::1699928497
+::res://Homework Of Game Level Design/shader_cache/BlitShaderRD/39067cdfb4a323f101e25b8f061ce46f6dafbd920e8a9c466b612778ee394e1a/::1699928497
+::res://Homework Of Game Level Design/shader_cache/BlitShaderRD/7151885a91019781e4e2182f4df2b6c1a16ca1cc9ff82b5397dd0771cafd04e3/::1699928497
+::res://Homework Of Game Level Design/shader_cache/BokehDofShaderRD/::1699928497
+::res://Homework Of Game Level Design/shader_cache/BokehDofShaderRD/364d92083efb477bb785dd09b64b58f4d4644073a59e4e77e27cdc9dbb0aa701/::1699928497
+::res://Homework Of Game Level Design/shader_cache/BokehDofShaderRD/bd3dff3d8d73ffac8302541388e5f2083d1e672da38f3a60c22e6471d4306e59/::1699928497
+::res://Homework Of Game Level Design/shader_cache/BokehDofShaderRD/c196811d345285ca1ab30ac26a22fe02e84aa24411cf501c690e0b0cbae363ad/::1699928497
+::res://Homework Of Game Level Design/shader_cache/CanvasOcclusionShaderRD/::1699928497
+::res://Homework Of Game Level Design/shader_cache/CanvasOcclusionShaderRD/06a7a096e96f68ebacc9a9489fc09f8474264c6c3df1b36010f173f77500ffc3/::1699928497
+::res://Homework Of Game Level Design/shader_cache/CanvasOcclusionShaderRD/8ddb1cb737c80cffff7678789d26d17f2ed48c2523e9739f52d66e74f079b481/::1699928497
+::res://Homework Of Game Level Design/shader_cache/CanvasOcclusionShaderRD/da28d3ad91e101aafefb8b8c53de02758c6424fb6e6baa72b9823cd3d71bff5f/::1699928497
+::res://Homework Of Game Level Design/shader_cache/CanvasSdfShaderRD/::1699928497
+::res://Homework Of Game Level Design/shader_cache/CanvasSdfShaderRD/0e5e030a21ac1f9b53034f38775ec54684ef52b330dae4e4576c5ce9e791c1c4/::1699928497
+::res://Homework Of Game Level Design/shader_cache/CanvasSdfShaderRD/720375ba1ec8f69869b8d3d866204479258a8bfec20d8a474b5a4d96ac6f3863/::1699928497
+::res://Homework Of Game Level Design/shader_cache/CanvasSdfShaderRD/a4e631923c81d21773ca021d68c7f509bd2b6422d698d28a74a462cb752f69f4/::1699928497
+::res://Homework Of Game Level Design/shader_cache/CanvasShaderRD/::1699928497
+::res://Homework Of Game Level Design/shader_cache/CanvasShaderRD/2be9c218361cbc7bbbb01b21a70a4335773ab6e2727a13979df4ef6dd2e6e5f1/::1699928497
+::res://Homework Of Game Level Design/shader_cache/CanvasShaderRD/47fb85aaead0a6268775670c7cb3d22dfa20ad8e07107bd3ba1dbde50cdf5902/::1699928497
+::res://Homework Of Game Level Design/shader_cache/CanvasShaderRD/98e4485babbd51b480f1908e95d4c2032127245d87ef49ff226f54b7c2b33389/::1699928497
+::res://Homework Of Game Level Design/shader_cache/ClusterDebugShaderRD/::1699928497
+::res://Homework Of Game Level Design/shader_cache/ClusterDebugShaderRD/827d358a3cc8237d03b2f9386301cc6ae8351e75fbbdaa7d89c1521a1563cfa8/::1699928497
+::res://Homework Of Game Level Design/shader_cache/ClusterDebugShaderRD/b3e7bc00adcb635ac03df99ecb6d5d5d99eb3b0df2d0ef344422b4664a410160/::1699928497
+::res://Homework Of Game Level Design/shader_cache/ClusterDebugShaderRD/b33df7dd0bf0cbf6c094292d71aa0028b7bfb8a4100305af9b6129888ebb4e70/::1699928497
+::res://Homework Of Game Level Design/shader_cache/ClusterRenderShaderRD/::1699928497
+::res://Homework Of Game Level Design/shader_cache/ClusterRenderShaderRD/d7a7cb00eb192aed29d3b680f9bc528fadaf3b2adb5b78fb0e7a4820fe473861/::1699928497
+::res://Homework Of Game Level Design/shader_cache/ClusterRenderShaderRD/ded5bf24df7ce6a5b182fc8e61a24362e4c3496d5c9169445f1a8431d30ab25c/::1699928497
+::res://Homework Of Game Level Design/shader_cache/ClusterRenderShaderRD/f9fc4ca7ff08e054cea0d49631ab7ececcf83953ebe4de8ec39d672ce20b77d8/::1699928497
+::res://Homework Of Game Level Design/shader_cache/ClusterStoreShaderRD/::1699928497
+::res://Homework Of Game Level Design/shader_cache/ClusterStoreShaderRD/01b78efcab5e435c8555d2608af86be36710d2b920bb640b8c88f347c0557953/::1699928497
+::res://Homework Of Game Level Design/shader_cache/ClusterStoreShaderRD/a4e4bb3b390023e8957c85241658494e4018300e54a9278c1271a66ac32ab8aa/::1699928497
+::res://Homework Of Game Level Design/shader_cache/ClusterStoreShaderRD/ad8d80fe5072e6afb373ff2fe121a584b0c21dded3284fff0fc8d7fad41bb862/::1699928497
+::res://Homework Of Game Level Design/shader_cache/CopyShaderRD/::1699928497
+::res://Homework Of Game Level Design/shader_cache/CopyShaderRD/3b2111e944a81f739309e1e4973ff2d928d4a9b65c938c00937687550fbcb6f1/::1699928497
+::res://Homework Of Game Level Design/shader_cache/CopyShaderRD/5a916b42080ae696a7d1de2fe233631efba1363e308ea7369141d07ffb75ac9f/::1699928497
+::res://Homework Of Game Level Design/shader_cache/CopyShaderRD/8b06baaf237b22193c42f58ded13ccbf11e32f72ead656622782e3fb298240e1/::1699928497
+::res://Homework Of Game Level Design/shader_cache/CopyToFbShaderRD/::1699928497
+::res://Homework Of Game Level Design/shader_cache/CopyToFbShaderRD/524a29200685eb2945a7f7a2067f930c8e42a9c5dbd9f34252f519e6a4ae0b6f/::1699928497
+::res://Homework Of Game Level Design/shader_cache/CopyToFbShaderRD/902b57311908e5b66acf08d08218ad9436c8cfc389906b7102ea4edc6e07aa83/::1699928497
+::res://Homework Of Game Level Design/shader_cache/CopyToFbShaderRD/f7b15d20c5b10c665cea385236f81831ff0898c356e9db8f59b6499dc78007c4/::1699928497
+::res://Homework Of Game Level Design/shader_cache/CubemapDownsamplerShaderRD/::1699928497
+::res://Homework Of Game Level Design/shader_cache/CubemapDownsamplerShaderRD/6e2113c8cc06f629d13462f0d0e9caa893cf1c9884ca79b79c5e0fbc355dc638/::1699928497
+::res://Homework Of Game Level Design/shader_cache/CubemapDownsamplerShaderRD/213bf332579ec8763dcd7f4758a533f6bbb8bdeb2594e24abbb70d0297fcaa62/::1699928497
+::res://Homework Of Game Level Design/shader_cache/CubemapDownsamplerShaderRD/545984f94ee4cbfa70eceb18a95c0ae106c0b69d612442c06c9545ec56cbb26a/::1699928497
+::res://Homework Of Game Level Design/shader_cache/CubemapFilterShaderRD/::1699928497
+::res://Homework Of Game Level Design/shader_cache/CubemapFilterShaderRD/4149a31197708df2845100fbba564fd56eddf44154f276ba3ce7bed31dbbf88f/::1699928497
+::res://Homework Of Game Level Design/shader_cache/CubemapFilterShaderRD/c19dc66d1a0ee2abe2f7f375884297adde96461b2be4687f5f3d748b672a7995/::1699928497
+::res://Homework Of Game Level Design/shader_cache/CubemapFilterShaderRD/e060560817d52096ce981c45bf74898acd73c68fba3f36bf1b187a9c2556f65a/::1699928497
+::res://Homework Of Game Level Design/shader_cache/CubemapRoughnessShaderRD/::1699928497
+::res://Homework Of Game Level Design/shader_cache/CubemapRoughnessShaderRD/295dec5f8129d40105f40e8d2d83625554f0ae4926972185a2a539b88d5df458/::1699928497
+::res://Homework Of Game Level Design/shader_cache/CubemapRoughnessShaderRD/27096ab3130fc3fa8e45f1b7cacb74b320bbdedb0d1a6124f1ca01570b4aa3d0/::1699928497
+::res://Homework Of Game Level Design/shader_cache/CubemapRoughnessShaderRD/a288efe84033f31b79863938cf5e2d64316612ca6eac20bbfe295a3590af8729/::1699928497
+::res://Homework Of Game Level Design/shader_cache/CubeToDpShaderRD/::1699928497
+::res://Homework Of Game Level Design/shader_cache/CubeToDpShaderRD/9be0c289b6cbb6569753e18491620bc9f07e5dff3ea1df2bbc3146b308383a1e/::1699928497
+::res://Homework Of Game Level Design/shader_cache/CubeToDpShaderRD/146d16814a68898edb4b607b9cda0c04fdf70ac214d64e327be9fb93526be456/::1699928497
+::res://Homework Of Game Level Design/shader_cache/CubeToDpShaderRD/537f5a5722b33c05aa8969fa51393f3e99eb856106c3e6bc85dc442dfec013df/::1699928497
+::res://Homework Of Game Level Design/shader_cache/FsrUpscaleShaderRD/::1699928497
+::res://Homework Of Game Level Design/shader_cache/FsrUpscaleShaderRD/84e4ecadf1d3ed5f5c2167c6602d83b0ab850311d2319e1925eb8b9bf6b553e4/::1699928497
+::res://Homework Of Game Level Design/shader_cache/FsrUpscaleShaderRD/76215a6520048acdf90b0226f2c862d75db481bfc6cc0b63d501ac28ea134a85/::1699928497
+::res://Homework Of Game Level Design/shader_cache/FsrUpscaleShaderRD/a5007fc00ff43fb69a20f956a43ddc44eafb66e023b06f3045bb8eaad6593c1a/::1699928497
+::res://Homework Of Game Level Design/shader_cache/GiShaderRD/::1699928497
+::res://Homework Of Game Level Design/shader_cache/GiShaderRD/3188e2f900a3f5b89d5abde216472ee4c56754404982baf23608e3215991e104/::1699928497
+::res://Homework Of Game Level Design/shader_cache/GiShaderRD/932720069e92b13afadf517d58129a03e498fab6bef00a12ec2ab3d6c77953db/::1699928497
+::res://Homework Of Game Level Design/shader_cache/GiShaderRD/bd8b5e6fd2f3d6f9a2a7c2ff47e6be888438cef37b629ee0685943a8a3dcc20d/::1699928497
+::res://Homework Of Game Level Design/shader_cache/LuminanceReduceShaderRD/::1699928497
+::res://Homework Of Game Level Design/shader_cache/LuminanceReduceShaderRD/98d111b944022ded0b56552d66b6f658564887b10d1c26076d89c62e1da35225/::1699928497
+::res://Homework Of Game Level Design/shader_cache/LuminanceReduceShaderRD/280518b8a0d01c44fddd1fa136bfd0a213f111a45d6673d6c7cded4b48dfbad9/::1699928497
+::res://Homework Of Game Level Design/shader_cache/LuminanceReduceShaderRD/cadea5bf347afd1a929e3e4ed2d29bca78d88b9a5105057fa57dc89b21a6f864/::1699928497
+::res://Homework Of Game Level Design/shader_cache/ParticlesCopyShaderRD/::1699928497
+::res://Homework Of Game Level Design/shader_cache/ParticlesCopyShaderRD/16f598a14989ac8eb81afabdf6cf551b0a302904f607f6fbac5d9878124bb56d/::1699928497
+::res://Homework Of Game Level Design/shader_cache/ParticlesCopyShaderRD/30d21082fe72e130c7621befd8bfec2c061c78adea142b14d6eccd550287e438/::1699928497
+::res://Homework Of Game Level Design/shader_cache/ParticlesCopyShaderRD/ea0bad833929651e45a43bb70430ed2bb79dfdd22d77c802f7e0ff49b34a72f1/::1699928497
+::res://Homework Of Game Level Design/shader_cache/ParticlesShaderRD/::1699928497
+::res://Homework Of Game Level Design/shader_cache/ParticlesShaderRD/015fdc4b8d8470329af9a54d3bc74713bc02ebe9b69c55b59c7bdde4dc936d57/::1699928497
+::res://Homework Of Game Level Design/shader_cache/ParticlesShaderRD/16de6717d98bc4518eb988c6aed50480ec518a584e2679d2871d35633818c774/::1699928497
+::res://Homework Of Game Level Design/shader_cache/ParticlesShaderRD/9652c31239ba7b07e7b729937e6007c7e32f314f433f14c74349375923994f2e/::1699928497
+::res://Homework Of Game Level Design/shader_cache/ResolveShaderRD/::1699928497
+::res://Homework Of Game Level Design/shader_cache/ResolveShaderRD/02a8d5f2ae458bdf2b918e5aa956039f4c90ef58f592afa1288458594b368167/::1699928497
+::res://Homework Of Game Level Design/shader_cache/ResolveShaderRD/4ddc0a88d38e2c128a066ac1ab988ef9baf60ff9bef9ad3d7cf8ad19fddb4dc0/::1699928497
+::res://Homework Of Game Level Design/shader_cache/ResolveShaderRD/5f7d8634214080bef244435fb86b154c8e46f662dada2c8c4fb4292809b3aee2/::1699928497
+::res://Homework Of Game Level Design/shader_cache/RoughnessLimiterShaderRD/::1699928497
+::res://Homework Of Game Level Design/shader_cache/RoughnessLimiterShaderRD/00fe0337f351b3062d8e7ebc3693444780628d591d127a7db0e442e287587979/::1699928497
+::res://Homework Of Game Level Design/shader_cache/SceneForwardClusteredShaderRD/::1699928497
+::res://Homework Of Game Level Design/shader_cache/SceneForwardClusteredShaderRD/57db3266521a18d036ca7564091f6fd94e97effdec9fa41ff8fd0fcb3cbf4cae/::1699928497
+::res://Homework Of Game Level Design/shader_cache/SceneForwardClusteredShaderRD/81e1cf0a25a1aafaa253d659c999ba32b35c44070e850a99fa4f2dd6f2e2761d/::1699928497
+::res://Homework Of Game Level Design/shader_cache/SceneForwardClusteredShaderRD/d56fb96aa4541ce7ac9dcda9720db6250b10a678876bcffc7581df924b3bcccf/::1699928497
+::res://Homework Of Game Level Design/shader_cache/ScreenSpaceReflectionFilterShaderRD/::1699928497
+::res://Homework Of Game Level Design/shader_cache/ScreenSpaceReflectionFilterShaderRD/742f420be1f3279d72ccfe0a12a12926ba92247fd2889fe41e281761b661c908/::1699928497
+::res://Homework Of Game Level Design/shader_cache/ScreenSpaceReflectionFilterShaderRD/c2e7a0679c88de2399900ffe3537e6f6d8238209f3d5d2d9f7a7e31f1f57190b/::1699928497
+::res://Homework Of Game Level Design/shader_cache/ScreenSpaceReflectionFilterShaderRD/ce4ec1d0c0c443f298807d594e28bac0d13c2b609947de7d28d2a65e2da1532d/::1699928497
+::res://Homework Of Game Level Design/shader_cache/ScreenSpaceReflectionScaleShaderRD/::1699928497
+::res://Homework Of Game Level Design/shader_cache/ScreenSpaceReflectionScaleShaderRD/7a68678ba5856fa583cee18baa1d3a307cd61fad48f2b71fd8680f97f4a69cb4/::1699928497
+::res://Homework Of Game Level Design/shader_cache/ScreenSpaceReflectionScaleShaderRD/29a17a5dce143ee97dd5f28ea1f1762e2627a1c6133b054fa3ef1c2d04def1a4/::1699928497
+::res://Homework Of Game Level Design/shader_cache/ScreenSpaceReflectionScaleShaderRD/197cc420e0e2e7126e4df18b5a923ca2deb7a48c63933e42b584d2552f63ac59/::1699928497
+::res://Homework Of Game Level Design/shader_cache/ScreenSpaceReflectionShaderRD/::1699928497
+::res://Homework Of Game Level Design/shader_cache/ScreenSpaceReflectionShaderRD/44c7f323576484c1fe1e64732bcce3d4eb63268b9161a9c7eaa7df9f52d46f52/::1699928497
+::res://Homework Of Game Level Design/shader_cache/ScreenSpaceReflectionShaderRD/424464acb547437c985c6aa36b498543a24a68f55f203747cb1f2089e7743d74/::1699928497
+::res://Homework Of Game Level Design/shader_cache/ScreenSpaceReflectionShaderRD/fa697525fdaea51a1e410989d485ce0c2bd368600948e14681848a19d1d34295/::1699928497
+::res://Homework Of Game Level Design/shader_cache/SdfgiDebugProbesShaderRD/::1699928497
+::res://Homework Of Game Level Design/shader_cache/SdfgiDebugProbesShaderRD/a110c4a48d96f0c1a62753342ca75e3e4130526133ffedbc290e8ae922c3eb4f/::1699928497
+::res://Homework Of Game Level Design/shader_cache/SdfgiDebugProbesShaderRD/b692584da84dc50dcc2e551b5033da0379ba0fda0b68624de7dd3106e4029e40/::1699928497
+::res://Homework Of Game Level Design/shader_cache/SdfgiDebugProbesShaderRD/e3b2dd3aaa9b70986022822723eabc3cd893ff32b1390a073f7ab0c39bc470cf/::1699928497
+::res://Homework Of Game Level Design/shader_cache/SdfgiDebugShaderRD/::1699928497
+::res://Homework Of Game Level Design/shader_cache/SdfgiDebugShaderRD/02c5d41969edf9c407c3785e299b9990405fa248602127a6a002456a831123d8/::1699928497
+::res://Homework Of Game Level Design/shader_cache/SdfgiDebugShaderRD/5aa6f35bf419bfa8f7d6d8194a65af1defaef130e36fc7a7ee506ec47b14cb4a/::1699928497
+::res://Homework Of Game Level Design/shader_cache/SdfgiDebugShaderRD/8dd077b164a2bf648afeb1d0b5185b969b3f0346743ac1c3fbc1d2229290a658/::1699928497
+::res://Homework Of Game Level Design/shader_cache/SdfgiDirectLightShaderRD/::1699928497
+::res://Homework Of Game Level Design/shader_cache/SdfgiDirectLightShaderRD/382686d321df33be75fa3d6562972e89cc64039db9f5fd557d9c37fed0e267f1/::1699928497
+::res://Homework Of Game Level Design/shader_cache/SdfgiDirectLightShaderRD/cf4d6583a1f7deddd5711f50438a3146d9df2d524f4bee2767e8e4013fa7cc33/::1699928497
+::res://Homework Of Game Level Design/shader_cache/SdfgiDirectLightShaderRD/dc5c50d73fee6296274617c425aaf061adc44de423810e288585c56e946fb084/::1699928497
+::res://Homework Of Game Level Design/shader_cache/SdfgiIntegrateShaderRD/::1699928497
+::res://Homework Of Game Level Design/shader_cache/SdfgiIntegrateShaderRD/0b876f0a5be1b61c271185721222cc1240fee6d49c059a7393602f657773d616/::1699928497
+::res://Homework Of Game Level Design/shader_cache/SdfgiIntegrateShaderRD/22aa4cf250ccc81c35902a3e634d21b7b7184a98aeb8019d27e7c3dddb1fdceb/::1699928497
+::res://Homework Of Game Level Design/shader_cache/SdfgiIntegrateShaderRD/884d33b3725827595338ec71e770eb15a4d412026be4591e378194d3562a0a35/::1699928497
+::res://Homework Of Game Level Design/shader_cache/SdfgiPreprocessShaderRD/::1699928497
+::res://Homework Of Game Level Design/shader_cache/SdfgiPreprocessShaderRD/833f2315b87b04102944ecb1d8df91d15eed29c3cc6491a2992ff7ad11a8cd27/::1699928497
+::res://Homework Of Game Level Design/shader_cache/SdfgiPreprocessShaderRD/80982b3368c8f9f0b6cbc224ad802e82963050218ee971d72acf4f2a4cbb9ea4/::1699928497
+::res://Homework Of Game Level Design/shader_cache/SdfgiPreprocessShaderRD/ab3bcae8a31a9ed0af5acc280f8b58b7b0be620983572a45a17d2e99b71ecd14/::1699928497
+::res://Homework Of Game Level Design/shader_cache/SkeletonShaderRD/::1699928497
+::res://Homework Of Game Level Design/shader_cache/SkeletonShaderRD/3fa7348d84cbb97207ccc1795c0f7b6d37ef87f1eff15c35f4dbef9c5cb473d2/::1699928497
+::res://Homework Of Game Level Design/shader_cache/SkeletonShaderRD/4a8d9fafa505ff57f4b0ad9e7a4b70f992f1255d7d600decfd6434dd53391853/::1699928497
+::res://Homework Of Game Level Design/shader_cache/SkeletonShaderRD/7f4e805917f34ab3ffa6efd139d4de020b11b712e27abaf26aebe867363a84ac/::1699928497
+::res://Homework Of Game Level Design/shader_cache/SkyShaderRD/::1699928497
+::res://Homework Of Game Level Design/shader_cache/SkyShaderRD/01b2f04cb5060a435330cb2744e925d2f26cb4d857bad2225becffef4c4f6dce/::1699928497
+::res://Homework Of Game Level Design/shader_cache/SkyShaderRD/5a793f45bcc23bb30b43b1a79466e065199856174b2fc257dd3ae2e74eeaeccc/::1699928497
+::res://Homework Of Game Level Design/shader_cache/SkyShaderRD/cddd380f4ce26f41fed1c5165cb634e123829e8e282a5a4d4badc3861729a1e5/::1699928497
+::res://Homework Of Game Level Design/shader_cache/SortShaderRD/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SortShaderRD/66bdf7eec6b3dec9fb7014b195ffd7dbc72f383ec5cd2ce8bb1479eae8680a57/::1699928497
+::res://Homework Of Game Level Design/shader_cache/SortShaderRD/c57dfb6bd194f867dc7dbd62b126d2a87576dbd207875960a0785067c24bc9e5/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SortShaderRD/f0c36749240ee98a6b7ea1088d33bdb5e4b7f9f8bae5f566044ac1f187c079b8/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SpecularMergeShaderRD/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SpecularMergeShaderRD/937f5dc1cd78c6fcd793cebbb62129ee8b23f03b7439cd4905502d02da6011a5/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SpecularMergeShaderRD/c35d8bbc3796e84da14b0e423b3cf246186e84dabd0d7fe961c5a6bd77158e3a/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SpecularMergeShaderRD/fc6e25d1b172253152df35bc73180d677b1c3279f84d89a2429c0cf62e44ecf3/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SsaoBlurShaderRD/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SsaoBlurShaderRD/0d36b02ae0ac1d9d610239d41974bd1f26e47cb2c870bb02b44bc47bc865078c/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SsaoBlurShaderRD/09eab6d652d6ab8844b9bb1f6dd86c96d78a43ad720f521b2c7ba42a48c428eb/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SsaoBlurShaderRD/42e65d8eee9ecb0cc13e84c0261c208f53bb01c2416da0150afffd5ca178bc72/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SsaoImportanceMapShaderRD/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SsaoImportanceMapShaderRD/061013aff69db2ad83f956fa5bc6eb827578f06a6b96e4174dc0fd6b9eabf816/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SsaoImportanceMapShaderRD/ba95de06963d7a1f12218e6e70003d7958bc3f187d56eb2ec51ce1f39c3ae662/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SsaoImportanceMapShaderRD/f4b9eeea7a6cfd79262bd38826ae4692a07621eb5e4da0ca9cb9ee5bc66952e7/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SsaoInterleaveShaderRD/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SsaoInterleaveShaderRD/5a84218aca25b5f15647e96e924423f58afdf7d2a1d5eede2e111330d935b228/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SsaoInterleaveShaderRD/430d2a4c9c850aabd8590350e564b77cd87986522f0e8d8db75b9b8409d89902/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SsaoInterleaveShaderRD/dde16dd32a154f5ffa88715c2959f6a6156668c4158d4f2e80679c8808d21238/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SsaoShaderRD/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SsaoShaderRD/5cbabea116779c887cf653244b3a30eaf83ee8714351569ad584b6bae36379d1/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SsaoShaderRD/ab759f890698c3c5f8d2235ab7142635af8a0c7fcdbf6ff73ac94c47074c9949/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SsaoShaderRD/b51afa50f5f4149f7d740f356a850b77ae6bb7f4789404a61db5b20f4c1859b0/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SsEffectsDownsampleShaderRD/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SsEffectsDownsampleShaderRD/610d8f58059b265f5b3f5410cc238db920940213caea27df6b526ee089ae961d/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SsEffectsDownsampleShaderRD/c28aa8ee396c9f3b888bc50c4af438ee5c26be3d8f4c4fe4b8fed46a068d688e/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SsEffectsDownsampleShaderRD/ecc18d03ccce3eab3d1abe5032a49c00a82816189edbc057bc952b6536b6661e/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SsilBlurShaderRD/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SsilBlurShaderRD/14f40408c672929d20b33f0cbb82e87cdb04dd3f1f63ec8175e84fe72ddc39ca/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SsilBlurShaderRD/462583d9dfceda6c19830d99954039286a5c3f11f9bf0839196d0e2d5120f784/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SsilBlurShaderRD/dfdec0f8dcbdaf4535c6fe915bea6076ecada110d66a8bb6562fff73600a11d7/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SsilImportanceMapShaderRD/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SsilImportanceMapShaderRD/8e16a79032cc082b28599821aed7174e637852aa55cfa190d959599317685672/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SsilImportanceMapShaderRD/9856d51dafcb3215c0b15583307ec363c67875384a45277b59cdcf3a080019d3/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SsilImportanceMapShaderRD/b43cd1bebaa40320dc83047b393edfc55de1276447e20a6c2cdd4528fe8ca28f/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SsilInterleaveShaderRD/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SsilInterleaveShaderRD/53ed331df4920406b9b1ffc0352b27de9ce79069edf59e730da362d6accdbfc0/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SsilInterleaveShaderRD/b1cd9f167c7bf4c28d85d5e75cb1fc34ca809878a9512e6ddafe9fdb291e7185/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SsilInterleaveShaderRD/bab5e4a2b7d8538d89262d13415ccaea79a1f951ecd742d7bd736630d02c2f85/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SsilShaderRD/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SsilShaderRD/3f29d9866e0f99d3e432ebe1bc56feff8a532b3604aa9ede9bf217386de330ea/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SsilShaderRD/04682a2d4fed606c2848069bec3818744c4ef1232094c9477c96635ed1022106/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SsilShaderRD/fe90702d20ed1336cfd360f186c4d75ebf5388b582d68cbc9d6c68f9ed5bab57/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SubsurfaceScatteringShaderRD/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SubsurfaceScatteringShaderRD/8f3b0338c0bb8921ee9e95726f8976eee649ca2c3f598b29ee851b99d185c05c/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SubsurfaceScatteringShaderRD/836ff95c8c73e4e2e30ee38be7868d146f8df293504c11d35932e942157072e1/::1699928498
+::res://Homework Of Game Level Design/shader_cache/SubsurfaceScatteringShaderRD/b53cd0ddb7b0a7d8ce55fc06eeedd5a4cf4c83fcf070afdc67b41c90f2a8bc42/::1699928498
+::res://Homework Of Game Level Design/shader_cache/TaaResolveShaderRD/::1699928498
+::res://Homework Of Game Level Design/shader_cache/TaaResolveShaderRD/9a8da5843a2acc4aeac690d01cb5d5772b4373f1ab789e6b1a7eaefa6fe5861f/::1699928498
+::res://Homework Of Game Level Design/shader_cache/TaaResolveShaderRD/7390b30a1fc7e4e902075e52f53cf3749e2ef183eee246e4c52c66962bf9637b/::1699928498
+::res://Homework Of Game Level Design/shader_cache/TaaResolveShaderRD/56664d955faaf2fe2d80b7ef18c0390a7d318fbdc32aa1010abd15462aafc33a/::1699928498
+::res://Homework Of Game Level Design/shader_cache/TonemapShaderRD/::1699928498
+::res://Homework Of Game Level Design/shader_cache/TonemapShaderRD/04be84fdcfd0f15934cc337d5ca513c56d5f22cae67638b75f0ef1fa751776ff/::1699928498
+::res://Homework Of Game Level Design/shader_cache/TonemapShaderRD/240a2624b354cb31571b915ae06e7f99fc8f41f0156f8aeb103ae9b525e33866/::1699928498
+::res://Homework Of Game Level Design/shader_cache/TonemapShaderRD/aadddcfd926ff59a671557d2b8df74ab4c979c5320ea104f8afadf535945da94/::1699928498
+::res://Homework Of Game Level Design/shader_cache/VolumetricFogProcessShaderRD/::1699928498
+::res://Homework Of Game Level Design/shader_cache/VolumetricFogProcessShaderRD/9359c6af77f84d9010c3add6c51d4aa2565e5597db050b7e7b1ddb5da5854757/::1699928498
+::res://Homework Of Game Level Design/shader_cache/VolumetricFogProcessShaderRD/ec900ea50e267bfc17f7249a06429e34ccde9e2212f484a102b22d48d920efa7/::1699928498
+::res://Homework Of Game Level Design/shader_cache/VolumetricFogProcessShaderRD/f1a5f3d7e541ec6631de6eb06ffb657a4227e01365e3dd090da8667bbac8c8fd/::1699928498
+::res://Homework Of Game Level Design/shader_cache/VolumetricFogShaderRD/::1699928498
+::res://Homework Of Game Level Design/shader_cache/VolumetricFogShaderRD/28f55e4628c4f9828e5820700222955d60d1eb8b4e9e5ececd62ee02a8364c88/::1699928498
+::res://Homework Of Game Level Design/shader_cache/VolumetricFogShaderRD/9568b89fc546edd2522e024b706985b47fe0355a64816fc2d0cc098c940505a3/::1699928498
+::res://Homework Of Game Level Design/shader_cache/VolumetricFogShaderRD/d8afbd6ca9b9f3d2228069b25173957613b85545c18a2255581fca76a7661adc/::1699928498
+::res://Homework Of Game Level Design/shader_cache/VoxelGiDebugShaderRD/::1699928498
+::res://Homework Of Game Level Design/shader_cache/VoxelGiDebugShaderRD/44c61be16ee56a0cedf5f3f5c6615f9990e960983e27e473c8dc4b61ebd68e24/::1699928498
+::res://Homework Of Game Level Design/shader_cache/VoxelGiDebugShaderRD/5839f2a1f442b5d1395a031887582eb247e17cbc2897f23b99f3ca7f7d5f5f2c/::1699928498
+::res://Homework Of Game Level Design/shader_cache/VoxelGiDebugShaderRD/b514b4467de4c73cb041f3272503078877365932f0e8f350af40ed1db2f24e93/::1699928498
+::res://Homework Of Game Level Design/shader_cache/VoxelGiShaderRD/::1699928498
+::res://Homework Of Game Level Design/shader_cache/VoxelGiShaderRD/7c2f4a05ce7ea4b76397af11243d734a3aeea19d2d5f18a7cabe9c71728cde42/::1699928498
+::res://Homework Of Game Level Design/shader_cache/VoxelGiShaderRD/e01e5feb22e166201bc780e1f96498099c49564a464635a88e0ad67b7a629f1a/::1699928498
+::res://Homework Of Game Level Design/shader_cache/VoxelGiShaderRD/edf3cb937d7e14a5dfda34645e3093bf60a5046a80b21af45d8f0a8075b69c0a/::1699928498
+::res://Homework Of Game Level Design/shader_cache/VrsShaderRD/::1699928498
+::res://Homework Of Game Level Design/shader_cache/VrsShaderRD/5b3536a83ebc3464de8e99f6897c2942e1c7c56ebdde5c7a0a7b95aeef5adbcb/::1699928498
+::res://Homework Of Game Level Design/shader_cache/VrsShaderRD/692f721edbab6d58a28802ef0b40d37bb06cd741eacdfb7ff39b7ace79345d0a/::1699928498
+::res://Homework Of Game Level Design/shader_cache/VrsShaderRD/13606ac5033ac3a438a0ccd4ddc0559865f62ea158bc3a3c6357d39001885c99/::1699928498
+::res://Homework Of Game Level Design/vulkan/::1699928498
+::res://Scenes/::1699629434
 Character.gd::GDScript::-1::1699626044::0::1::::MyCharacter<>MeshInstance3D<>::
-character.tscn::PackedScene::6458050933114404621::1699628539::0::1::::<><>::res://Scenes/Character.gd
-end_item.tscn::PackedScene::1694936839085956098::1699628540::0::1::::<><>::
+character.tscn::PackedScene::6458050933114404621::1699629434::0::1::::<><>::res://Scenes/Character.gd
+end_item.tscn::PackedScene::1694936839085956098::1699629434::0::1::::<><>::
 Grid.gd::GDScript::-1::1699625002::0::1::::MyGrid<>MeshInstance3D<>::
 grid.tscn::PackedScene::6093494260126186975::1699624837::0::1::::<><>::res://Scenes/Grid.gd
-jump_item.tscn::PackedScene::7971408197655634765::1699628540::0::1::::<><>::
+jump_item.tscn::PackedScene::7971408197655634765::1699629434::0::1::::<><>::
 monster.gd::GDScript::-1::1699625996::0::1::::MyMonster<>MyCharacter<>::
-monster.tscn::PackedScene::7537281463481156749::1699628540::0::1::::<><>::res://Scenes/monster.gd
-rotation_item.tscn::PackedScene::2294860712827499356::1699628540::0::1::::<><>::
-tile.tscn::PackedScene::8430320049248758364::1699628540::0::1::::<><>::res://Tile.gd
+monster.tscn::PackedScene::7537281463481156749::1699629434::0::1::::<><>::res://Scenes/monster.gd
+rotation_item.tscn::PackedScene::2294860712827499356::1699629434::0::1::::<><>::
+tile.tscn::PackedScene::8430320049248758364::1699629434::0::1::::<><>::res://Tile.gd
 ::res://Scripts/::1699629285
 EndItem.gd::GDScript::-1::1699593213::0::1::::EndItem<>MyItem<>::
 Item.gd::GDScript::-1::1699626195::0::1::::MyItem<>Node3D<>::

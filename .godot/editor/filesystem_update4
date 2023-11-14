@@ -5,3 +5,4 @@ res://Scenes/end_item.tscn
 res://Scenes/rotation_item.tscn
 res://Scenes/jump_item.tscn
 res://Scenes/monster.tscn
+res://Scripts/Level.gd

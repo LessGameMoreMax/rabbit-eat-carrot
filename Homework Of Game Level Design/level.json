@@ -10,6 +10,7 @@
         "character_speed_x": 0,
         "character_speed_y": 0,
         "character_speed_z": -1,
+        "has_monster": 1,
         "monster_tile_index_x": 0,
         "monster_tile_index_z": 1,
         "monster_grid_index_x": 1,
