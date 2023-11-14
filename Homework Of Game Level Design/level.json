@@ -1,0 +1,21 @@
+[
+    {
+        "level_index": 0,
+        "level_name": "TestLevel",
+        "map_index": 0,
+        "character_tile_index_x": 0,
+        "character_tile_index_z": 0,
+        "character_grid_index_x": 2,
+        "character_grid_index_z": 3,
+        "character_speed_x": 0,
+        "character_speed_y": 0,
+        "character_speed_z": -1,
+        "monster_tile_index_x": 0,
+        "monster_tile_index_z": 1,
+        "monster_grid_index_x": 1,
+        "monster_grid_index_z": 2,
+        "monster_speed_x": -1,
+        "monster_speed_y": 0,
+        "monster_speed_z": 0
+    }
+]
