@@ -148,5 +148,310 @@
                 "index_z": 2
             }
         ]
+    },
+    {   
+        "tile_index":5,
+        "tile_name":"Tile6",
+        "moveable":1,
+        "grids":[
+            {
+                "grid_index": 0,
+                "index_x":4,
+                "index_z":2
+            },
+            {
+                "grid_index": 0,
+                "index_x": 3,
+                "index_z": 2
+            },
+            {
+                "grid_index": 0,
+                "index_x": 2,
+                "index_z": 2
+            }
+        ]
+    },
+    {  
+        "tile_index":6,
+        "tile_name":"Tile7",
+        "moveable":1,
+        "grids":[
+            {
+                "grid_index": 0,
+                "index_x":0,
+                "index_z":2
+            },
+            {
+                "grid_index": 0,
+                "index_x": 1,
+                "index_z": 2
+            },
+            {
+                "grid_index": 1,
+                "index_x": 2,
+                "index_z": 2
+            }
+        ]
+     },
+     {
+        "tile_index":7,
+        "tile_name":"Tile8",
+        "moveable":1,
+        "grids":[
+            {
+                "grid_index": 0,
+                "index_x":0,
+                "index_z":2
+            },
+            {
+                "grid_index": 0,
+                "index_x": 1,
+                "index_z": 2
+            },
+            {
+                "grid_index": 0,
+                "index_x": 2,
+                "index_z": 2
+            },
+            {
+                "grid_index": 0,
+                "index_x": 2,
+                "index_z": 0
+            },
+            {
+                "grid_index": 0,
+                "index_x": 2,
+                "index_z": 1
+            }         
+        ]
+     } ,
+     {
+        "tile_index":8,
+        "tile_name":"Tile9",
+        "moveable":1,
+        "grids":[
+            {
+                "grid_index": 0,
+                "index_x":0,
+                "index_z":2
+            },
+            {
+                "grid_index": 0,
+                "index_x": 1,
+                "index_z": 2
+            },
+            {
+                "grid_index": 0,
+                "index_x": 2,
+                "index_z": 2
+            },
+            {
+                "grid_index": 0,
+                "index_x": 3,
+                "index_z": 2
+            },
+            {
+                "grid_index": 0,
+                "index_x": 4,
+                "index_z": 2
+            }         
+        ]
+     },
+     {
+        "tile_index":9,
+        "tile_name":"Tile10",
+        "moveable":1,
+        "grids":[
+            {
+                "grid_index": 1,
+                "index_x":2,
+                "index_z":2
+            },
+            {
+                "grid_index": 0,
+                "index_x": 2,
+                "index_z": 3
+            },
+            {
+                "grid_index": 0,
+                "index_x": 2,
+                "index_z": 4
+            }
+        ]
+    },
+    {
+        "tile_index":10,
+        "tile_name":"Tile11",
+        "moveable":1,
+        "grids":[
+            {
+                "grid_index": 0,
+                "index_x":2,
+                "index_z":2
+            },
+            {
+                "grid_index": 0,
+                "index_x": 3,
+                "index_z": 2
+            },
+            {
+                "grid_index": 0,
+                "index_x": 4,
+                "index_z": 2
+            }
+        ]
+    },
+    {
+        "tile_index":11,
+        "tile_name":"Tile12",
+        "moveable":1,
+        "grids":[
+            {
+                "grid_index": 0,
+                "index_x":0,
+                "index_z":2
+            },
+            {
+                "grid_index": 1,
+                "index_x": 1,
+                "index_z": 2
+            },
+            {
+                "grid_index": 0,
+                "index_x": 3,
+                "index_z": 2
+            },
+            {
+                "grid_index": 0,
+                "index_x":4,
+                "index_z":2
+            }
+        ]
+    },
+    {  
+        "tile_index":12,
+        "tile_name":"Tile13",
+        "moveable":1,
+        "grids":[
+            {
+                "grid_index": 0,
+                "index_x":0,
+                "index_z":2
+            },
+            {
+                "grid_index": 0,
+                "index_x": 1,
+                "index_z": 2
+            },
+            {
+                "grid_index": 0,
+                "index_x": 2,
+                "index_z": 2
+            }
+        ]
+     },
+     {
+        "tile_index":13,
+        "tile_name":"Tile14",
+        "moveable":1,
+        "grids":[
+            {
+                "grid_index": 0,
+                "index_x":0,
+                "index_z":2
+            },
+            {
+                "grid_index": 0,
+                "index_x": 1,
+                "index_z": 2
+            },
+            {
+                "grid_index": 0,
+                "index_x": 2,
+                "index_z": 2
+            },
+            {
+                "grid_index": 0,
+                "index_x": 3,
+                "index_z": 2
+            },
+            {
+                "grid_index": 0,
+                "index_x": 4,
+                "index_z": 2
+            }
+        ]
+    },
+    {
+        "tile_index":14,
+        "tile_name":"Tile15",
+        "moveable":0,
+        "grids":[
+            {
+                "grid_index": 0,
+                "index_x":0,
+                "index_z":2
+            },
+            {
+                "grid_index": 0,
+                "index_x": 1,
+                "index_z": 2
+            },
+            {
+                "grid_index": 0,
+                "index_x": 3,
+                "index_z": 2
+            },
+            {
+                "grid_index": 0,
+                "index_x":4,
+                "index_z":2
+            }
+        ]
+    },
+    {  
+        "tile_index":15,
+        "tile_name":"Tile16",
+        "moveable":1,
+        "grids":[
+            {
+                "grid_index": 0,
+                "index_x":0,
+                "index_z":2
+            },
+            {
+                "grid_index": 0,
+                "index_x": 1,
+                "index_z": 2
+            },
+            {
+                "grid_index": 0,
+                "index_x": 2,
+                "index_z": 2
+            }
+        ]
+     },
+     {   
+        "tile_index":16,
+        "tile_name":"Tile17",
+        "moveable":1,
+        "grids":[
+            {
+                "grid_index": 0,
+                "index_x":4,
+                "index_z":2
+            },
+            {
+                "grid_index": 0,
+                "index_x": 3,
+                "index_z": 2
+            },
+            {
+                "grid_index": 1,
+                "index_x": 2,
+                "index_z": 2
+            }
+        ]
     }
+                  
 ]

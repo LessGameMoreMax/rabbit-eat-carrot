@@ -1,3 +1,7 @@
+Label
+Button
+ColorRect
+Control
 Timer
 CollisionShape3D
 Area3D

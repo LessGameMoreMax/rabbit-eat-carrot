@@ -6,3 +6,14 @@ res://Scenes/rotation_item.tscn
 res://Scenes/jump_item.tscn
 res://Scenes/monster.tscn
 res://Scripts/Level.gd
+res://Initialize.gd
+res://UserInterface.gd
+res://SelectLevel.gd
+res://Scenes/level_button.tscn
+res://Scenes/level_button.gd
+res://GameUI.gd
+res://Scripts/EndItem.gd
+res://VictoryUI.gd
+res://Scripts/Item.gd
+res://Scenes/Character.gd
+res://DieUI.gd

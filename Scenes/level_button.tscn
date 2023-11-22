@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://cbo5pjysk4bwp"]
+
+[ext_resource type="Script" path="res://Scenes/level_button.gd" id="1_4nvqo"]
+
+[node name="LevelButton" type="Button"]
+anchors_preset = -1
+offset_right = 90.0
+offset_bottom = 90.0
+theme_override_font_sizes/font_size = 40
+action_mode = 0
+script = ExtResource("1_4nvqo")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

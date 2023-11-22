@@ -16,7 +16,6 @@ static var character: MyCharacter
 static var monster: MyMonster
 
 func _ready():
-	LoadLevel(DefaultLevelInfoIndex)
 	return
 
 
@@ -42,6 +41,8 @@ func LoadLevel(index: int):
 	character.position = tile.GetGrid(level_data[index]["character_grid_index_x"], level_data[index]["character_grid_index_z"]).position
 	character.position.y = 1
 	character.tile = tile
+	character.die_signal.connect(UserInterface.Singleton.get_child(2)._on_die_signal)
+	character.die_signal.connect(UserInterface.Singleton.get_child(4)._on_die_signal)
 	tile.add_child(character)
 	
 	if level_data[index]["has_monster"] == 1:
@@ -53,3 +54,19 @@ func LoadLevel(index: int):
 		monster.tile = tile
 		tile.add_child(monster)
 	return
+
+
+func _on_select_level_load_level_signal(index):
+	LoadLevel(index)
+	pass
+
+
+func _on_retry_pressed():
+	get_child(0).queue_free()
+	LoadLevel(level_index)
+	pass
+
+
+func _on_exit_pressed():
+	get_child(0).queue_free()
+	pass

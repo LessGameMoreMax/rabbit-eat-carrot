@@ -45,8 +45,10 @@ static func LoadItem(index: int)->MyItem:
 		item.item_name = "RoadItem"
 		return item
 	if index == 1:
-		var item: MyItem = EndItem.new()
+		var item: EndItem = EndItem.new()
 		item.item_name = "EndItem"
+		item.victory_signal.connect(UserInterface.Singleton.get_child(2)._on_victory_signal)
+		item.victory_signal.connect(UserInterface.Singleton.get_child(3)._on_victory_signal)
 		return item
 	if index == 2:
 		var item: MyItem = RotationItem.new()

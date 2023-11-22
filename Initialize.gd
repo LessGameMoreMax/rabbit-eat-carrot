@@ -20,6 +20,7 @@ func _init():
 	return
 
 func _ready():
+	$UserInterface/MainMenu.show()
 	pass
 
 func _process(delta):

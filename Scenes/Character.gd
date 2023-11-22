@@ -19,6 +19,8 @@ var jump_speed = MyConfig.jump_height / jump_time
 var cur_time = 0.0
 var position_y = 0.0
 
+signal die_signal
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -61,6 +63,7 @@ func Move(delta):
 	
 func Die():
 	should_move = false
+	die_signal.emit()
 	return
 	
 func BeginJump(target_grid: MyGrid):

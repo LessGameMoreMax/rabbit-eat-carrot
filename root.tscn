@@ -1,8 +1,27 @@
-[gd_scene load_steps=4 format=3 uid="uid://bt4gsgfglomvu"]
+[gd_scene load_steps=13 format=3 uid="uid://bt4gsgfglomvu"]
 
 [ext_resource type="Script" path="res://Initialize.gd" id="1_482ex"]
 [ext_resource type="Script" path="res://Scripts/Level.gd" id="1_ehhgx"]
 [ext_resource type="Script" path="res://SelectManager.gd" id="2_k5acq"]
+[ext_resource type="Script" path="res://UserInterface.gd" id="4_v753m"]
+[ext_resource type="Script" path="res://SelectLevel.gd" id="5_lj42k"]
+[ext_resource type="Script" path="res://GameUI.gd" id="6_fi57m"]
+[ext_resource type="Script" path="res://VictoryUI.gd" id="7_hpi6o"]
+[ext_resource type="Script" path="res://DieUI.gd" id="8_ynvp7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2i5fv"]
+bg_color = Color(1, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t8cnf"]
+bg_color = Color(0.317647, 0.592157, 0.929412, 1)
+
+[sub_resource type="Theme" id="Theme_n6jov"]
+Button/font_sizes/font_size = 30
+Button/styles/hover = SubResource("StyleBoxFlat_2i5fv")
+Button/styles/normal = SubResource("StyleBoxFlat_t8cnf")
+
+[sub_resource type="LabelSettings" id="LabelSettings_8svlt"]
+font_size = 40
 
 [node name="Root" type="Node3D"]
 script = ExtResource("1_482ex")
@@ -11,8 +30,191 @@ script = ExtResource("1_482ex")
 transform = Transform3D(1, 0, 0, 0, 0.821766, 0.569825, 0, -0.569825, 0.821766, 0, 3.74965, 3.96159)
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(0.432106, -0.557747, 0.708662, 0, 0.785811, 0.618467, -0.901823, -0.267244, 0.339554, 24.1387, 17.8553, 17.6175)
+transform = Transform3D(0.432106, -0.557747, 0.708662, 0, 0.785811, 0.618467, -0.901823, -0.267243, 0.339554, 32.2278, 12.3922, 14.3104)
 script = ExtResource("2_k5acq")
 
 [node name="Level" type="Node3D" parent="Camera3D"]
 script = ExtResource("1_ehhgx")
+
+[node name="UserInterface" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("4_v753m")
+
+[node name="MainMenu" type="ColorRect" parent="UserInterface"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.376471)
+
+[node name="Button" type="Button" parent="UserInterface/MainMenu"]
+layout_mode = 0
+offset_left = 399.0
+offset_top = 411.0
+offset_right = 759.0
+offset_bottom = 483.0
+theme = SubResource("Theme_n6jov")
+text = "开始游戏"
+
+[node name="SelectLevel" type="ColorRect" parent="UserInterface"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.862745, 0.839216, 0.32549, 1)
+script = ExtResource("5_lj42k")
+
+[node name="Label" type="Label" parent="UserInterface/SelectLevel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -161.0
+offset_right = 161.0
+offset_bottom = 86.0
+grow_horizontal = 2
+text = "选择关卡"
+label_settings = SubResource("LabelSettings_8svlt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GameUI" type="ColorRect" parent="UserInterface"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0)
+script = ExtResource("6_fi57m")
+
+[node name="Label" type="Label" parent="UserInterface/GameUI"]
+layout_mode = 0
+offset_right = 124.0
+offset_bottom = 50.0
+theme_override_font_sizes/font_size = 32
+text = "第"
+vertical_alignment = 1
+
+[node name="Retry" type="Button" parent="UserInterface/GameUI"]
+layout_mode = 0
+offset_left = 884.0
+offset_top = 10.0
+offset_right = 1008.0
+offset_bottom = 61.0
+text = "重新开始"
+
+[node name="Exit" type="Button" parent="UserInterface/GameUI"]
+layout_mode = 0
+offset_left = 1017.0
+offset_top = 9.0
+offset_right = 1140.0
+offset_bottom = 62.0
+text = "退出关卡"
+
+[node name="VictoryUI" type="ColorRect" parent="UserInterface"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.862745, 0.862745, 0.862745, 0.227451)
+script = ExtResource("7_hpi6o")
+
+[node name="Label" type="Label" parent="UserInterface/VictoryUI"]
+layout_mode = 0
+offset_left = 392.0
+offset_top = 179.0
+offset_right = 752.0
+offset_bottom = 308.0
+theme_override_font_sizes/font_size = 70
+text = "通关了！"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Retry" type="Button" parent="UserInterface/VictoryUI"]
+layout_mode = 0
+offset_left = 296.0
+offset_top = 358.0
+offset_right = 512.0
+offset_bottom = 415.0
+theme_override_font_sizes/font_size = 30
+text = "重新挑战"
+
+[node name="Exit" type="Button" parent="UserInterface/VictoryUI"]
+layout_mode = 0
+offset_left = 636.0
+offset_top = 358.0
+offset_right = 856.0
+offset_bottom = 413.0
+theme_override_font_sizes/font_size = 30
+text = "选择关卡"
+
+[node name="DieUI" type="ColorRect" parent="UserInterface"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0.266667)
+script = ExtResource("8_ynvp7")
+
+[node name="Retry" type="Button" parent="UserInterface/DieUI"]
+layout_mode = 0
+offset_left = 297.0
+offset_top = 359.0
+offset_right = 512.0
+offset_bottom = 414.0
+theme_override_font_sizes/font_size = 30
+text = "重新挑战"
+
+[node name="Exit" type="Button" parent="UserInterface/DieUI"]
+layout_mode = 0
+offset_left = 637.0
+offset_top = 359.0
+offset_right = 856.0
+offset_bottom = 412.0
+theme_override_font_sizes/font_size = 30
+text = "选择关卡"
+
+[node name="Label" type="Label" parent="UserInterface/DieUI"]
+layout_mode = 0
+offset_left = 390.0
+offset_top = 192.0
+offset_right = 746.0
+offset_bottom = 300.0
+theme_override_font_sizes/font_size = 70
+text = "失败了！"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="UserInterface/MainMenu/Button" to="UserInterface" method="_on_button_pressed"]
+[connection signal="load_level_signal" from="UserInterface/SelectLevel" to="Camera3D/Level" method="_on_select_level_load_level_signal"]
+[connection signal="load_level_signal" from="UserInterface/SelectLevel" to="UserInterface/GameUI" method="_on_select_level_load_level_signal"]
+[connection signal="pressed" from="UserInterface/GameUI/Retry" to="Camera3D/Level" method="_on_retry_pressed"]
+[connection signal="pressed" from="UserInterface/GameUI/Exit" to="Camera3D/Level" method="_on_exit_pressed"]
+[connection signal="pressed" from="UserInterface/GameUI/Exit" to="UserInterface/SelectLevel" method="_on_exit_pressed"]
+[connection signal="pressed" from="UserInterface/GameUI/Exit" to="UserInterface/GameUI" method="_on_exit_pressed"]
+[connection signal="pressed" from="UserInterface/VictoryUI/Retry" to="Camera3D/Level" method="_on_retry_pressed"]
+[connection signal="pressed" from="UserInterface/VictoryUI/Retry" to="UserInterface/GameUI" method="_on_retry_pressed"]
+[connection signal="pressed" from="UserInterface/VictoryUI/Retry" to="UserInterface/VictoryUI" method="_on_retry_pressed"]
+[connection signal="pressed" from="UserInterface/VictoryUI/Exit" to="Camera3D/Level" method="_on_exit_pressed"]
+[connection signal="pressed" from="UserInterface/VictoryUI/Exit" to="UserInterface/SelectLevel" method="_on_exit_pressed"]
+[connection signal="pressed" from="UserInterface/VictoryUI/Exit" to="UserInterface/VictoryUI" method="_on_exit_pressed"]
+[connection signal="pressed" from="UserInterface/DieUI/Retry" to="Camera3D/Level" method="_on_retry_pressed"]
+[connection signal="pressed" from="UserInterface/DieUI/Retry" to="UserInterface/GameUI" method="_on_retry_pressed"]
+[connection signal="pressed" from="UserInterface/DieUI/Retry" to="UserInterface/DieUI" method="_on_retry_pressed"]
+[connection signal="pressed" from="UserInterface/DieUI/Exit" to="Camera3D/Level" method="_on_exit_pressed"]
+[connection signal="pressed" from="UserInterface/DieUI/Exit" to="UserInterface/SelectLevel" method="_on_exit_pressed"]
+[connection signal="pressed" from="UserInterface/DieUI/Exit" to="UserInterface/DieUI" method="_on_exit_pressed"]
