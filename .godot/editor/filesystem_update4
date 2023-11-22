@@ -7,3 +7,4 @@ res://Scenes/jump_item.tscn
 res://Scenes/monster.tscn
 res://Scenes/level_button.tscn
 res://Scenes/grid.tscn
+res://Scripts/RotationItem.gd

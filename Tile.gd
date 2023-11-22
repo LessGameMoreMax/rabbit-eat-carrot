@@ -70,12 +70,12 @@ func GetGridByCoord(coordinate: Vector3)->MyGrid:
 	if coord.x < 0 or coord.z < 0 or coord.x > MyConfig.tile_width or coord.z >= MyConfig.tile_width: return null
 	return GetGrid(int(coord.x / MyConfig.grid_width), int(coord.z / MyConfig.grid_width))
 	
-func RotateClockwise(character: MyCharacter):
+func RotateClockwise(character: MyCharacter, degree: float):
 	var temp = GetGridByCoord(character.global_position)
 	var new_map = {}
 	for key in map:
 		var grid = map[key]
-		grid.position = grid.position.rotated(Vector3(0.0, 1.0, 0.0), deg_to_rad(-90))
+		grid.position = grid.position.rotated(Vector3(0.0, 1.0, 0.0), deg_to_rad(degree))
 		var coord = (grid.position + Vector3(MyConfig.tile_width / 2.0, 0.0, MyConfig.tile_width / 2.0)) / MyConfig.grid_width
 		grid.index_x = int(coord.x)
 		grid.index_z = int(coord.z)

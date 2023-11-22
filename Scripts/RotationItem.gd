@@ -4,6 +4,8 @@ class_name RotationItem
 
 var rotation_item_mesh: MeshInstance3D = null
 
+var degree: float = -90.0
+
 func _ready():
 	rotation_item_mesh = load("res://Scenes/rotation_item.tscn").instantiate()
 	add_child(rotation_item_mesh)
@@ -13,8 +15,17 @@ func _process(delta):
 	pass
 	
 func PossesCharacter(character: MyCharacter):
-	character.tile.RotateClockwise(character)
-	character.speed = Vector3(-character.speed.z, 0.0, -character.speed.x)
+	character.tile.RotateClockwise(character, degree)
+	var flag = 0
+	if degree < 0:
+		flag = 1
+	else:
+		flag = 0
+	if abs(character.speed.x) == flag:
+		character.speed = Vector3(character.speed.z, 0.0, character.speed.x)
+	else:
+		character.speed = Vector3(-character.speed.z, 0.0, -character.speed.x)
+	degree *= -1.0
 	var forward = false
 	var left = false
 	var right = false
