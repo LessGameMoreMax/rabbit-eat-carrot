@@ -27,3 +27,5 @@ USER WARNING: 4 RIDs of type "VertexBuffer" were leaked.
    at: _free_rids (drivers/vulkan/rendering_device_vulkan.cpp:9113)
 USER WARNING: ObjectDB instances leaked at exit (run with --verbose for details).
    at: cleanup (core/object/object.cpp:2047)
+USER ERROR: Resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:494)

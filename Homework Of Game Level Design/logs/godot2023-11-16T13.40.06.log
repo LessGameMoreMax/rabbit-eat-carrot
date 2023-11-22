@@ -1,8 +1,6 @@
 Godot Engine v4.1.3.stable.official.f06b6836a - https://godotengine.org
-Vulkan API 1.3.224 - Forward+ - Using Vulkan Device #0: NVIDIA - NVIDIA GeForce RTX 3060 Laptop GPU
+Vulkan API 1.3.260 - Forward+ - Using Vulkan Device #0: NVIDIA - NVIDIA GeForce RTX 3080 Ti
  
-USER ERROR: Condition "!is_inside_tree()" is true. Returning: Transform3D()
-   at: get_global_transform (scene/3d/node_3d.cpp:324)
 USER ERROR: Condition "!is_inside_tree()" is true. Returning: Transform3D()
    at: get_global_transform (scene/3d/node_3d.cpp:324)
 USER ERROR: Condition "!is_inside_tree()" is true. Returning: Transform3D()
@@ -27,3 +25,5 @@ USER WARNING: 4 RIDs of type "VertexBuffer" were leaked.
    at: _free_rids (drivers/vulkan/rendering_device_vulkan.cpp:9113)
 USER WARNING: ObjectDB instances leaked at exit (run with --verbose for details).
    at: cleanup (core/object/object.cpp:2047)
+USER ERROR: Resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:494)

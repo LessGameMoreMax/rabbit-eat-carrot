@@ -12,8 +12,6 @@ func _process(delta):
 	super._process(delta)
 	pass
 
-
 func _on_area_3d_area_entered(area):
-	print("GameOver")
 	MyLevel.character.Die()
 	pass

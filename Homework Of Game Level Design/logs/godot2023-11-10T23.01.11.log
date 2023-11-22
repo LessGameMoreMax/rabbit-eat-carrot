@@ -9,6 +9,8 @@ USER ERROR: Condition "!is_inside_tree()" is true. Returning: Transform3D()
    at: get_global_transform (scene/3d/node_3d.cpp:324)
 USER ERROR: Condition "!is_inside_tree()" is true. Returning: Transform3D()
    at: get_global_transform (scene/3d/node_3d.cpp:324)
+USER ERROR: Condition "!is_inside_tree()" is true. Returning: Transform3D()
+   at: get_global_transform (scene/3d/node_3d.cpp:324)
 ERROR: 2 RID allocations of type 'P12GodotShape3D' were leaked at exit.
 USER ERROR: 1 shaders of type SceneForwardClusteredShaderRD were never freed
    at: ~ShaderRD (servers/rendering/renderer_rd/shader_rd.cpp:708)
@@ -25,5 +27,3 @@ USER WARNING: 4 RIDs of type "VertexArray" were leaked.
    at: _free_rids (drivers/vulkan/rendering_device_vulkan.cpp:9113)
 USER WARNING: 4 RIDs of type "VertexBuffer" were leaked.
    at: _free_rids (drivers/vulkan/rendering_device_vulkan.cpp:9113)
-USER WARNING: ObjectDB instances leaked at exit (run with --verbose for details).
-   at: cleanup (core/object/object.cpp:2047)

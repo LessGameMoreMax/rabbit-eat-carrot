@@ -1,6 +1,4 @@
 res://root.tscn
-res://VictoryUI.gd
-res://DieUI.gd
 res://Scenes/character.tscn
 res://Scenes/tile.tscn
 res://Scenes/end_item.tscn
