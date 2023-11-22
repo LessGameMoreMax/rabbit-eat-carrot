@@ -12,8 +12,8 @@ var level_name: String = "DefaultLevelName"
 var map_index: int = 0
 
 static var tile_map: MyTileMap
-static var character: MyCharacter
-static var monster: MyMonster
+static var character: MyCharacter = null
+static var monster: MyMonster = null
 
 func _ready():
 	return
@@ -63,6 +63,10 @@ func _on_select_level_load_level_signal(index):
 
 func _on_retry_pressed():
 	get_child(0).queue_free()
+	if character != null:
+		character.queue_free()
+	if monster != null:
+		monster.queue_free()
 	LoadLevel(level_index)
 	pass
 

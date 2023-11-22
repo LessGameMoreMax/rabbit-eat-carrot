@@ -7,7 +7,7 @@ const RayLength = 500.0
 
 static var current_tile: MyTile = null
 static var current_state: State = State.Idle
-var should_input: bool = true
+static var should_input: bool = true
 var covered_tile: MyTile = null
 
 var level: MyLevel = null

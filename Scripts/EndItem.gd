@@ -16,6 +16,9 @@ func _process(delta):
 	pass
 	
 func PossesCharacter(character: MyCharacter):
+	if character == MyLevel.monster:
+		super.PossesCharacter(character)
+		return
 	character.should_move = false
 	end_item_mesh.position.y = 2.0
 	victory_signal.emit()

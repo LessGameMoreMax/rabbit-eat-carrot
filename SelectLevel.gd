@@ -9,7 +9,6 @@ signal load_level_signal(index)
 
 func _ready():
 	Singleton = self
-	len(MyLevel.level_data)
 	for i in range(1, len(MyLevel.level_data)):
 		var button: LevelButton = load(LevelButtonScenePath).instantiate()
 		button.level_button_index = i

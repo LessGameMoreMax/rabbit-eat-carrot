@@ -12,14 +12,17 @@ func _process(delta):
 	
 func _on_die_signal():
 	show()
+	MySelectManager.should_input = false
 	pass
 
 
 func _on_exit_pressed():
 	hide()
+	MySelectManager.should_input = true
 	pass # Replace with function body.
 
 
 func _on_retry_pressed():
 	hide()
+	MySelectManager.should_input = true
 	pass # Replace with function body.
