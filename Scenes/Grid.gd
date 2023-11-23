@@ -36,13 +36,13 @@ static func LoadJson():
 	return
 
 func _on_area_3d_area_entered(area):
-	timer.start(0.4 / MyConfig.character_speed)
+	timer.start(0.4 / MyLevel.character.speed_param)
 
 func _on_timer_timeout():
 	item.PossesCharacter(MyLevel.character)
 
 func _on_monster_area_area_entered(area):
-	monster_timer.start(0.4 / MyConfig.monster_speed)
+	monster_timer.start(0.4 / MyLevel.monster.speed_param)
 
 
 func _on_monster_timer_timeout():

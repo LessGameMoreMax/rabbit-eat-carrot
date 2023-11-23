@@ -4,7 +4,7 @@ class_name MyCharacter
 
 static var ScenePath = "res://Scenes/character.tscn"
 
-var ForwardSearchLength = 0.06
+var ForwardSearchLength = 0.08
 var BesideSearchLength = MyConfig.grid_width
 var speed: Vector3
 var speed_param: float = MyConfig.character_speed

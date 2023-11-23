@@ -18,16 +18,30 @@ func _on_select_level_load_level_signal(index):
 
 func _on_exit_pressed():
 	hide()
+	$Speed.should_speed = false
+	$Speed.text = "2X"
 	pass
 	
 func _on_victory_signal():
 	hide()
+	$Speed.should_speed = false
+	$Speed.text = "2X"
 	pass
 	
 func _on_die_signal():
 	hide()
+	$Speed.should_speed = false
+	$Speed.text = "2X"
 	pass
 
 func _on_retry_pressed():
 	show()
+	$Speed.should_speed = false
+	$Speed.text = "2X"
+	pass # Replace with function body.
+
+
+func _on_gameui_retry_pressed():
+	$Speed.should_speed = false
+	$Speed.text = "2X"
 	pass # Replace with function body.

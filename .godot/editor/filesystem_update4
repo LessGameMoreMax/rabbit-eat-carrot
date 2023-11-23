@@ -7,4 +7,8 @@ res://Scenes/jump_item.tscn
 res://Scenes/monster.tscn
 res://Scenes/level_button.tscn
 res://Scenes/grid.tscn
-res://Scripts/RotationItem.gd
+res://Scripts/Level.gd
+res://Speed.gd
+res://GameUI.gd
+res://Scenes/Character.gd
+res://Scenes/Grid.gd

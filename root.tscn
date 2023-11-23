@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bt4gsgfglomvu"]
+[gd_scene load_steps=14 format=3 uid="uid://bt4gsgfglomvu"]
 
 [ext_resource type="Script" path="res://Initialize.gd" id="1_482ex"]
 [ext_resource type="Script" path="res://Scripts/Level.gd" id="1_ehhgx"]
@@ -7,6 +7,7 @@
 [ext_resource type="Script" path="res://SelectLevel.gd" id="5_lj42k"]
 [ext_resource type="Script" path="res://GameUI.gd" id="6_fi57m"]
 [ext_resource type="Script" path="res://VictoryUI.gd" id="7_hpi6o"]
+[ext_resource type="Script" path="res://Speed.gd" id="7_k856l"]
 [ext_resource type="Script" path="res://DieUI.gd" id="8_ynvp7"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2i5fv"]
@@ -30,7 +31,8 @@ script = ExtResource("1_482ex")
 transform = Transform3D(1, 0, 0, 0, 0.821766, 0.569825, 0, -0.569825, 0.821766, 0, 3.74965, 3.96159)
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(0.432106, -0.557747, 0.708662, 0, 0.785811, 0.618467, -0.901823, -0.267243, 0.339554, 32.2278, 12.3922, 14.3104)
+transform = Transform3D(0.707107, -0.612372, 0.353553, 0, 0.5, 0.866025, -0.707107, -0.612372, 0.353553, 25, 25, 25)
+fov = 90.0
 script = ExtResource("2_k5acq")
 
 [node name="Level" type="Node3D" parent="Camera3D"]
@@ -121,6 +123,15 @@ offset_right = 1140.0
 offset_bottom = 62.0
 text = "退出关卡"
 
+[node name="Speed" type="Button" parent="UserInterface/GameUI"]
+layout_mode = 0
+offset_left = 750.0
+offset_top = 10.0
+offset_right = 876.0
+offset_bottom = 61.0
+text = "加速"
+script = ExtResource("7_k856l")
+
 [node name="VictoryUI" type="ColorRect" parent="UserInterface"]
 layout_mode = 1
 anchors_preset = 15
@@ -203,9 +214,11 @@ vertical_alignment = 1
 [connection signal="load_level_signal" from="UserInterface/SelectLevel" to="Camera3D/Level" method="_on_select_level_load_level_signal"]
 [connection signal="load_level_signal" from="UserInterface/SelectLevel" to="UserInterface/GameUI" method="_on_select_level_load_level_signal"]
 [connection signal="pressed" from="UserInterface/GameUI/Retry" to="Camera3D/Level" method="_on_retry_pressed"]
+[connection signal="pressed" from="UserInterface/GameUI/Retry" to="UserInterface/GameUI" method="_on_gameui_retry_pressed"]
 [connection signal="pressed" from="UserInterface/GameUI/Exit" to="Camera3D/Level" method="_on_exit_pressed"]
 [connection signal="pressed" from="UserInterface/GameUI/Exit" to="UserInterface/SelectLevel" method="_on_exit_pressed"]
 [connection signal="pressed" from="UserInterface/GameUI/Exit" to="UserInterface/GameUI" method="_on_exit_pressed"]
+[connection signal="pressed" from="UserInterface/GameUI/Speed" to="UserInterface/GameUI/Speed" method="_on_pressed"]
 [connection signal="pressed" from="UserInterface/VictoryUI/Retry" to="Camera3D/Level" method="_on_retry_pressed"]
 [connection signal="pressed" from="UserInterface/VictoryUI/Retry" to="UserInterface/GameUI" method="_on_retry_pressed"]
 [connection signal="pressed" from="UserInterface/VictoryUI/Retry" to="UserInterface/VictoryUI" method="_on_retry_pressed"]

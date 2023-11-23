@@ -67,10 +67,14 @@ func _on_retry_pressed():
 		character.queue_free()
 	if monster != null:
 		monster.queue_free()
+	character = null
+	monster = null
 	LoadLevel(level_index)
 	pass
 
 
 func _on_exit_pressed():
 	get_child(0).queue_free()
+	character = null
+	monster = null
 	pass
