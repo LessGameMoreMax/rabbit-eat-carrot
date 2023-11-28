@@ -47,6 +47,7 @@ func SetupTile(tile: MyTile):
 	return
 	
 func DropTile(tile: MyTile, covered_tile: MyTile):
+	MyAudioManager.Singleton.Play("DropTile")
 	if covered_tile == null:
 		tile.SetPosition()
 		AddTile(tile)

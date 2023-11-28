@@ -1,5 +1,6 @@
-Button
+AudioStreamPlayer
 Label
+Button
 ColorRect
 Control
 Timer

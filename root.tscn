@@ -1,25 +1,16 @@
-[gd_scene load_steps=14 format=3 uid="uid://bt4gsgfglomvu"]
+[gd_scene load_steps=13 format=3 uid="uid://bt4gsgfglomvu"]
 
 [ext_resource type="Script" path="res://Initialize.gd" id="1_482ex"]
 [ext_resource type="Script" path="res://Scripts/Level.gd" id="1_ehhgx"]
 [ext_resource type="Script" path="res://SelectManager.gd" id="2_k5acq"]
 [ext_resource type="Script" path="res://UserInterface.gd" id="4_v753m"]
+[ext_resource type="Theme" uid="uid://c6cludttyp43q" path="res://Themes/root.tres" id="5_h2ono"]
 [ext_resource type="Script" path="res://SelectLevel.gd" id="5_lj42k"]
 [ext_resource type="Script" path="res://GameUI.gd" id="6_fi57m"]
 [ext_resource type="Script" path="res://VictoryUI.gd" id="7_hpi6o"]
 [ext_resource type="Script" path="res://Speed.gd" id="7_k856l"]
 [ext_resource type="Script" path="res://DieUI.gd" id="8_ynvp7"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2i5fv"]
-bg_color = Color(1, 0, 0, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t8cnf"]
-bg_color = Color(0.317647, 0.592157, 0.929412, 1)
-
-[sub_resource type="Theme" id="Theme_n6jov"]
-Button/font_sizes/font_size = 30
-Button/styles/hover = SubResource("StyleBoxFlat_2i5fv")
-Button/styles/normal = SubResource("StyleBoxFlat_t8cnf")
+[ext_resource type="PackedScene" uid="uid://cfe3ufu3pcshu" path="res://Scenes/audio_manager.tscn" id="11_omt6g"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_8svlt"]
 font_size = 40
@@ -58,14 +49,56 @@ color = Color(0, 0, 0, 0.376471)
 
 [node name="Button" type="Button" parent="UserInterface/MainMenu"]
 layout_mode = 0
-offset_left = 399.0
-offset_top = 411.0
-offset_right = 759.0
-offset_bottom = 483.0
-theme = SubResource("Theme_n6jov")
+offset_left = 427.0
+offset_top = 214.0
+offset_right = 726.0
+offset_bottom = 272.0
+theme = ExtResource("5_h2ono")
 text = "开始游戏"
 
+[node name="Button2" type="Button" parent="UserInterface/MainMenu"]
+layout_mode = 0
+offset_left = 427.0
+offset_top = 314.0
+offset_right = 726.0
+offset_bottom = 373.0
+theme = ExtResource("5_h2ono")
+text = "制作名单"
+
+[node name="Button3" type="Button" parent="UserInterface/MainMenu"]
+layout_mode = 0
+offset_left = 429.0
+offset_top = 411.0
+offset_right = 727.0
+offset_bottom = 470.0
+theme = ExtResource("5_h2ono")
+text = "退出游戏"
+
+[node name="Label" type="Label" parent="UserInterface/MainMenu"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 480.0
+offset_right = 1659.0
+offset_bottom = 638.0
+theme_override_font_sizes/font_size = 26
+text = "本游戏采用自由开源软件Godot4制作，Godot官方网站：https://godotengine.org/
+
+秉持自由开源软件精神，本游戏采用MIT协议开源并已托管至Github，
+仓库地址：https://github.com/LessGameMoreMax/rabbit-eat-carrot"
+
+[node name="Label2" type="Label" parent="UserInterface/MainMenu"]
+layout_mode = 0
+offset_left = 312.0
+offset_top = 37.0
+offset_right = 826.0
+offset_bottom = 164.0
+theme_override_font_sizes/font_size = 101
+text = "漂浮块"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="SelectLevel" type="ColorRect" parent="UserInterface"]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -89,7 +122,17 @@ label_settings = SubResource("LabelSettings_8svlt")
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="SelectButton" type="Button" parent="UserInterface/SelectLevel"]
+layout_mode = 0
+offset_left = 897.0
+offset_top = 37.0
+offset_right = 1089.0
+offset_bottom = 86.0
+theme = ExtResource("5_h2ono")
+text = "返回主菜单"
+
 [node name="GameUI" type="ColorRect" parent="UserInterface"]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -133,6 +176,7 @@ text = "加速"
 script = ExtResource("7_k856l")
 
 [node name="VictoryUI" type="ColorRect" parent="UserInterface"]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -172,6 +216,7 @@ theme_override_font_sizes/font_size = 30
 text = "选择关卡"
 
 [node name="DieUI" type="ColorRect" parent="UserInterface"]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -210,9 +255,45 @@ text = "失败了！"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="ProductorUI" type="ColorRect" parent="UserInterface"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.494118, 0.666667, 0.756863, 1)
+
+[node name="ProductButton" type="Button" parent="UserInterface/ProductorUI"]
+layout_mode = 0
+offset_left = 897.0
+offset_top = 37.0
+offset_right = 1089.0
+offset_bottom = 86.0
+theme = ExtResource("5_h2ono")
+text = "返回主菜单"
+
+[node name="Label" type="Label" parent="UserInterface/ProductorUI"]
+layout_mode = 0
+offset_left = 303.0
+offset_top = 45.0
+offset_right = 1025.0
+offset_bottom = 504.0
+theme_override_font_sizes/font_size = 56
+text = "策划 刘倚辰 朴冠宇
+美术 郝文韬 刘永泰
+程序 韩永康"
+vertical_alignment = 1
+
+[node name="AudioManager" parent="." instance=ExtResource("11_omt6g")]
+
 [connection signal="pressed" from="UserInterface/MainMenu/Button" to="UserInterface" method="_on_button_pressed"]
+[connection signal="pressed" from="UserInterface/MainMenu/Button2" to="UserInterface" method="_on_button_2_pressed"]
+[connection signal="pressed" from="UserInterface/MainMenu/Button3" to="UserInterface" method="_on_button_3_pressed"]
 [connection signal="load_level_signal" from="UserInterface/SelectLevel" to="Camera3D/Level" method="_on_select_level_load_level_signal"]
 [connection signal="load_level_signal" from="UserInterface/SelectLevel" to="UserInterface/GameUI" method="_on_select_level_load_level_signal"]
+[connection signal="pressed" from="UserInterface/SelectLevel/SelectButton" to="UserInterface" method="_on_select_button_pressed"]
 [connection signal="pressed" from="UserInterface/GameUI/Retry" to="Camera3D/Level" method="_on_retry_pressed"]
 [connection signal="pressed" from="UserInterface/GameUI/Retry" to="UserInterface/GameUI" method="_on_gameui_retry_pressed"]
 [connection signal="pressed" from="UserInterface/GameUI/Exit" to="Camera3D/Level" method="_on_exit_pressed"]
@@ -231,3 +312,4 @@ vertical_alignment = 1
 [connection signal="pressed" from="UserInterface/DieUI/Exit" to="Camera3D/Level" method="_on_exit_pressed"]
 [connection signal="pressed" from="UserInterface/DieUI/Exit" to="UserInterface/SelectLevel" method="_on_exit_pressed"]
 [connection signal="pressed" from="UserInterface/DieUI/Exit" to="UserInterface/DieUI" method="_on_exit_pressed"]
+[connection signal="pressed" from="UserInterface/ProductorUI/ProductButton" to="UserInterface" method="_on_product_button_pressed"]

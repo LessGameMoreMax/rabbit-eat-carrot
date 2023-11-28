@@ -38,6 +38,7 @@ func CanclePreSelected():
 	return
 	
 func Selected(normal: Vector3):
+	MyAudioManager.Singleton.Play("DragTile")
 	material.albedo_color = Color.RED
 	global_position -= normal * UpLength
 	return

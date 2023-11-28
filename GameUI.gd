@@ -17,6 +17,7 @@ func _on_select_level_load_level_signal(index):
 
 
 func _on_exit_pressed():
+	MyAudioManager.Singleton.Play("ButtonPress")
 	hide()
 	$Speed.should_speed = false
 	$Speed.text = "2X"
@@ -35,6 +36,7 @@ func _on_die_signal():
 	pass
 
 func _on_retry_pressed():
+	MyAudioManager.Singleton.Play("ButtonPress")
 	show()
 	$Speed.should_speed = false
 	$Speed.text = "2X"
@@ -42,6 +44,7 @@ func _on_retry_pressed():
 
 
 func _on_gameui_retry_pressed():
+	MyAudioManager.Singleton.Play("ButtonPress")
 	$Speed.should_speed = false
 	$Speed.text = "2X"
 	pass # Replace with function body.

@@ -28,5 +28,6 @@ static func LoadLevel(index):
 
 
 func _on_exit_pressed():
+	MyAudioManager.Singleton.Play("ButtonPress")
 	show()
 	pass

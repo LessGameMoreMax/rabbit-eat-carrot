@@ -1,0 +1,30 @@
+[gd_scene load_steps=8 format=3 uid="uid://cfe3ufu3pcshu"]
+
+[ext_resource type="AudioStream" uid="uid://ciwg7gln4ms31" path="res://Art/AUDIO/ui1.wav" id="1_6uikm"]
+[ext_resource type="Script" path="res://Scenes/audio_manager.gd" id="1_tip0o"]
+[ext_resource type="AudioStream" uid="uid://butgerm6dclk8" path="res://Art/AUDIO/UI Message Appear 01.wav" id="2_j5pf1"]
+[ext_resource type="AudioStream" uid="uid://ctq6rxnbedm2i" path="res://Art/AUDIO/失败3.mp3" id="3_g4g11"]
+[ext_resource type="AudioStream" uid="uid://cas6nrbf6vtgo" path="res://Art/AUDIO/成功欢乐2.mp3" id="4_y11m8"]
+[ext_resource type="AudioStream" uid="uid://bhy6jbcw8ntmu" path="res://Art/AUDIO/地板落水2.wav" id="6_ycoha"]
+[ext_resource type="AudioStream" uid="uid://dquqmb2nif2vu" path="res://Art/AUDIO/行走或抓取地板.wav" id="7_f37tg"]
+
+[node name="AudioManager" type="Node3D"]
+script = ExtResource("1_tip0o")
+
+[node name="ButtonPress" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_6uikm")
+
+[node name="UIShow" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_j5pf1")
+
+[node name="Defeat" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_g4g11")
+
+[node name="Victory" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_y11m8")
+
+[node name="DropTile" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_ycoha")
+
+[node name="DragTile" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_f37tg")

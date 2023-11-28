@@ -1,4 +1,5 @@
 res://root.tscn
+res://Themes/root.tres
 res://Scenes/character.tscn
 res://Scenes/tile.tscn
 res://Scenes/end_item.tscn
@@ -7,8 +8,4 @@ res://Scenes/jump_item.tscn
 res://Scenes/monster.tscn
 res://Scenes/level_button.tscn
 res://Scenes/grid.tscn
-res://Scripts/Level.gd
-res://Speed.gd
-res://GameUI.gd
-res://Scenes/Character.gd
-res://Scenes/Grid.gd
+res://Scenes/audio_manager.tscn

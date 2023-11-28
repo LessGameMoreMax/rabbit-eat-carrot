@@ -127,6 +127,33 @@
     "tilemap_name": "MAP5",
     "tiles": [
         {
+            "tile_index": 32,
+            "index_x": 0,
+            "index_z": 0
+        },
+        {
+            "tile_index": 33,
+            "index_x": 0,
+            "index_z": 1
+        },
+        {
+            "tile_index": 34,
+            "index_x": 1,
+            "index_z": 1
+        },
+        {
+            "tile_index": 35,
+            "index_x": 2,
+            "index_z": 1
+        }
+        ]
+    },
+    { "tilemap_index": 6,
+    "tilemap_height": 10,
+    "tilemap_width": 10,
+    "tilemap_name": "MAP6",
+    "tiles": [
+        {
             "tile_index": 17,
             "index_x": 0,
             "index_z": 1
@@ -143,10 +170,10 @@
         }
         ]
     },
-    { "tilemap_index": 6,
+    { "tilemap_index": 7,
     "tilemap_height": 10,
     "tilemap_width": 10,
-    "tilemap_name": "MAP6",
+    "tilemap_name": "MAP7",
     "tiles": [
         {
             "tile_index": 20,
@@ -175,10 +202,10 @@
         }
         ]
     },
-    { "tilemap_index": 7,
+    { "tilemap_index": 8,
     "tilemap_height": 10,
     "tilemap_width": 10,
-    "tilemap_name": "MAP7",
+    "tilemap_name": "MAP8",
     "tiles": [
         {
             "tile_index": 25,
@@ -197,10 +224,10 @@
         }
         ]
     },
-    { "tilemap_index": 8,
+    { "tilemap_index": 9,
     "tilemap_height": 10,
     "tilemap_width": 10,
-    "tilemap_name": "MAP8",
+    "tilemap_name": "MAP9",
     "tiles": [
         {
             "tile_index": 28,
@@ -223,6 +250,111 @@
             "index_z": 0
         }
         ]
+    },
+    { "tilemap_index": 10,
+    "tilemap_height": 10,
+    "tilemap_width": 10,
+    "tilemap_name": "MAP10",
+    "tiles": [
+        {
+            "tile_index": 36,
+            "index_x": 0,
+            "index_z": 0
+        },
+        {
+            "tile_index": 37,
+            "index_x": 0,
+            "index_z": 1
+        },
+        {
+            "tile_index": 38,
+            "index_x": 1,
+            "index_z": 1
+        },
+        {
+            "tile_index": 39,
+            "index_x": 1,
+            "index_z": 0
+        }
+        ]
+    },
+    { "tilemap_index": 11,
+    "tilemap_height": 10,
+    "tilemap_width": 10,
+    "tilemap_name": "MAP11",
+    "tiles": [
+        {
+            "tile_index": 40,
+            "index_x": 0,
+            "index_z": 0
+        },
+        {
+            "tile_index": 41,
+            "index_x": 0,
+            "index_z": 1
+        },
+        {
+            "tile_index": 42,
+            "index_x": 0,
+            "index_z": 2
+        },
+        {
+            "tile_index": 43,
+            "index_x": 1,
+            "index_z": 2
+        },
+        {
+            "tile_index": 44,
+            "index_x": 1,
+            "index_z": 1
+        },
+        {
+            "tile_index": 45,
+            "index_x": 1,
+            "index_z": 0
+        },
+        {
+            "tile_index": 46,
+            "index_x": 2,
+            "index_z": 1
+        }
+        ]
+    },
+    { "tilemap_index": 11,
+    "tilemap_height": 10,
+    "tilemap_width": 10,
+    "tilemap_name": "MAP11",
+    "tiles": [
+        {
+            "tile_index": 47,
+            "index_x": 0,
+            "index_z": 1
+        },
+        {
+            "tile_index": 48,
+            "index_x": 1,
+            "index_z": 2
+        },
+        {
+            "tile_index": 49,
+            "index_x": 1,
+            "index_z": 1
+        },
+        {
+            "tile_index": 50,
+            "index_x": 1,
+            "index_z": 0
+        },
+        {
+            "tile_index": 51,
+            "index_x": 2,
+            "index_z": 1
+        },
+        {
+            "tile_index": 52,
+            "index_x": 2,
+            "index_z": 0
+        }
+        ]
     }
-
 ]
