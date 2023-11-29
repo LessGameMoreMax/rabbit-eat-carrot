@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://bt4gsgfglomvu"]
+[gd_scene load_steps=17 format=3 uid="uid://bt4gsgfglomvu"]
 
 [ext_resource type="Script" path="res://Initialize.gd" id="1_482ex"]
 [ext_resource type="Script" path="res://Scripts/Level.gd" id="1_ehhgx"]
@@ -6,11 +6,17 @@
 [ext_resource type="Script" path="res://UserInterface.gd" id="4_v753m"]
 [ext_resource type="Theme" uid="uid://c6cludttyp43q" path="res://Themes/root.tres" id="5_h2ono"]
 [ext_resource type="Script" path="res://SelectLevel.gd" id="5_lj42k"]
+[ext_resource type="Shader" path="res://mainmeun.gdshader" id="5_wy8h2"]
+[ext_resource type="Texture2D" uid="uid://c7fh8k25dey5p" path="res://Art/mmexport1701263622329.png" id="6_1tvvm"]
 [ext_resource type="Script" path="res://GameUI.gd" id="6_fi57m"]
 [ext_resource type="Script" path="res://VictoryUI.gd" id="7_hpi6o"]
 [ext_resource type="Script" path="res://Speed.gd" id="7_k856l"]
 [ext_resource type="Script" path="res://DieUI.gd" id="8_ynvp7"]
 [ext_resource type="PackedScene" uid="uid://cfe3ufu3pcshu" path="res://Scenes/audio_manager.tscn" id="11_omt6g"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2wr3b"]
+shader = ExtResource("5_wy8h2")
+shader_parameter/picture = ExtResource("6_1tvvm")
 
 [sub_resource type="LabelSettings" id="LabelSettings_8svlt"]
 font_size = 40
@@ -43,6 +49,7 @@ grow_vertical = 2
 script = ExtResource("4_v753m")
 
 [node name="MainMenu" type="ColorRect" parent="UserInterface"]
+material = SubResource("ShaderMaterial_2wr3b")
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0

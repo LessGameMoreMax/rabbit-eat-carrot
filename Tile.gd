@@ -10,16 +10,16 @@ static var tile_data = {}
 var index_x: int = 0
 var index_z: int = 0
 var tile_name: String = ""
-var material: StandardMaterial3D
+var material: ShaderMaterial
 var map = {}
 var moveable: int = 1
 
 func _ready():
-	material = 	get_surface_override_material(0) as StandardMaterial3D
+	material = get_surface_override_material(0) as ShaderMaterial
 	if IsMoveable():
-		material.albedo_color = Color.AQUAMARINE
+		material.set_shader_parameter("color", Color.AQUAMARINE)
 	else:
-		material.albedo_color = Color.DIM_GRAY
+		material.set_shader_parameter("color", Color.DIM_GRAY)
 	return
 
 func _process(delta):
@@ -30,29 +30,29 @@ func SetPosition():
 	return
 
 func PreSelected():
-	material.albedo_color = Color.YELLOW
+	material.set_shader_parameter("color", Color.YELLOW)
 	return
 	
 func CanclePreSelected():
-	material.albedo_color = Color.AQUAMARINE
+	material.set_shader_parameter("color", Color.AQUAMARINE)
 	return
 	
 func Selected(normal: Vector3):
 	MyAudioManager.Singleton.Play("DragTile")
-	material.albedo_color = Color.RED
+	material.set_shader_parameter("color", Color.RED)
 	global_position -= normal * UpLength
 	return
 
 func CancelSelected():
-	material.albedo_color = Color.AQUAMARINE
+	material.set_shader_parameter("color", Color.AQUAMARINE)
 	return
 	
 func Covered():
-	material.albedo_color = Color.LIME
+	material.set_shader_parameter("color", Color.LIME)
 	return
 	
 func CancelCovered():
-	material.albedo_color = Color.AQUAMARINE
+	material.set_shader_parameter("color", Color.AQUAMARINE)
 	return
 	
 func AddGrid(grid: MyGrid):

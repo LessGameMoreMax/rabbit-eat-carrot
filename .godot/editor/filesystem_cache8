@@ -1,18 +1,20 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1701247876
+::res://::1701263284
 DieUI.gd::GDScript::-1::1701162984::0::1::::<>ColorRect<>::
 GameUI.gd::GDScript::-1::1701162711::0::1::::<>ColorRect<>::
 icon.svg::CompressedTexture2D::754928274719144015::1700582768::1700582768::1::::<><>::
 Initialize.gd::GDScript::-1::1700642453::0::1::::MyConfig<>Node3D<>::
 README.md::TextFile::-1::1700582768::0::1::::<><>::
-root.tscn::PackedScene::3780272437082336814::1701246753::0::1::::<><>::res://Initialize.gd<>res://Scripts/Level.gd<>res://SelectManager.gd<>res://UserInterface.gd<>uid://c6cludttyp43q::::res://Themes/root.tres<>res://SelectLevel.gd<>res://GameUI.gd<>res://VictoryUI.gd<>res://Speed.gd<>res://DieUI.gd<>uid://cfe3ufu3pcshu::::res://Scenes/audio_manager.tscn
+root.tscn::PackedScene::3780272437082336814::1701263284::0::1::::<><>::res://Initialize.gd<>res://Scripts/Level.gd<>res://SelectManager.gd<>res://UserInterface.gd<>uid://c6cludttyp43q::::res://Themes/root.tres<>res://SelectLevel.gd<>res://GameUI.gd<>res://VictoryUI.gd<>res://Speed.gd<>res://DieUI.gd<>uid://cfe3ufu3pcshu::::res://Scenes/audio_manager.tscn
 SelectLevel.gd::GDScript::-1::1701162711::0::1::::SelectLevel<>ColorRect<>::
 SelectManager.gd::GDScript::-1::1700659755::0::1::::MySelectManager<>Camera3D<>::
 Speed.gd::GDScript::-1::1700740568::0::1::::<>Button<>::
-Tile.gd::GDScript::-1::1701238115::0::1::::MyTile<>MeshInstance3D<>::
+Tile.gd::GDScript::-1::1701260818::0::1::::MyTile<>MeshInstance3D<>::
 UserInterface.gd::GDScript::-1::1701163301::0::1::::UserInterface<>Control<>::
 VictoryUI.gd::GDScript::-1::1701162920::0::1::::<>ColorRect<>::
-::res://Art/::1701241885
+::res://Art/::1701264133
+mmexport1701263622329.png::CompressedTexture2D::7029690771032242491::1701264112::1701264138::1::::<><>::
+smile.glb::PackedScene::7504628112510793204::1701259415::1701259548::1::::<><>::
 ::res://Art/AUDIO/::1701156558
 lrg_sticks_land_concrete_01.wav::AudioStreamWAV::4070649718384454926::1701156515::1701156558::1::::<><>::
 lrg_sticks_land_gravel_01.wav::AudioStreamWAV::2550883879292906044::1701156515::1701156558::1::::<><>::
@@ -35,8 +37,9 @@ ui.wav::AudioStreamWAV::423019444879442214::1701156515::1701156558::1::::<><>::
 ::res://Art/史莱姆/::1701242531
 Slime.glb::PackedScene::849514300133623669::1701242074::1701242531::1::::<><>::
 Slime_Map #1.png::CompressedTexture2D::4332677809100896593::1701242530::1701242531::1::::<><>::
-::res://Art/素材/::1701246476
+::res://Art/素材/::1701259165
 end_item.glb::PackedScene::359464637328208763::1701246410::1701246476::1::::<><>::
+enemy.glb::PackedScene::7745643102275935054::1701253338::1701253391::1::::<><>::
 rotation_item_1.glb::PackedScene::6095348033328378897::1701239925::1701239951::1::::<><>::
 rotation_item_2.glb::PackedScene::7530748973639407606::1701240695::1701240732::1::::<><>::
 ::res://Homework Of Game Level Design/::1701170725
@@ -281,22 +284,23 @@ godot.log::TextFile::-1::1701170725::0::1::::<><>::
 ::res://Homework Of Game Level Design/shader_cache/VrsShaderRD/692f721edbab6d58a28802ef0b40d37bb06cd741eacdfb7ff39b7ace79345d0a/::1701170726
 ::res://Homework Of Game Level Design/shader_cache/VrsShaderRD/13606ac5033ac3a438a0ccd4ddc0559865f62ea158bc3a3c6357d39001885c99/::1701170726
 ::res://Homework Of Game Level Design/vulkan/::1701170726
-::res://Scenes/::1701246918
+::res://Scenes/::1701263284
 audio_manager.gd::GDScript::-1::1701162920::0::1::::MyAudioManager<>Node3D<>::
-audio_manager.tscn::PackedScene::5133779183073337674::1701246753::0::1::::<><>::uid://ciwg7gln4ms31::::res://Art/AUDIO/ui1.wav<>res://Scenes/audio_manager.gd<>uid://butgerm6dclk8::::res://Art/AUDIO/UI Message Appear 01.wav<>uid://ctq6rxnbedm2i::::res://Art/AUDIO/失败3.mp3<>uid://cas6nrbf6vtgo::::res://Art/AUDIO/成功欢乐2.mp3<>uid://bhy6jbcw8ntmu::::res://Art/AUDIO/地板落水2.wav<>uid://dquqmb2nif2vu::::res://Art/AUDIO/行走或抓取地板.wav
+audio_manager.tscn::PackedScene::5133779183073337674::1701263284::0::1::::<><>::uid://ciwg7gln4ms31::::res://Art/AUDIO/ui1.wav<>res://Scenes/audio_manager.gd<>uid://butgerm6dclk8::::res://Art/AUDIO/UI Message Appear 01.wav<>uid://ctq6rxnbedm2i::::res://Art/AUDIO/失败3.mp3<>uid://cas6nrbf6vtgo::::res://Art/AUDIO/成功欢乐2.mp3<>uid://bhy6jbcw8ntmu::::res://Art/AUDIO/地板落水2.wav<>uid://dquqmb2nif2vu::::res://Art/AUDIO/行走或抓取地板.wav
 Character.gd::GDScript::-1::1701243487::0::1::::MyCharacter<>MeshInstance3D<>::
-character.tscn::PackedScene::6458050933114404621::1701246753::0::1::::<><>::res://Scenes/Character.gd<>uid://mdrm2elbjnw4::::res://Art/史莱姆/Slime.glb
-end_item.tscn::PackedScene::1694936839085956098::1701246918::0::1::::<><>::uid://feelhsu4kb7x::::res://Art/素材/end_item.glb
+character.tscn::PackedScene::6458050933114404621::1701263284::0::1::::<><>::res://Scenes/Character.gd<>uid://de6kemvo7g4vg::::res://Art/smile.glb
+end_item.tscn::PackedScene::1694936839085956098::1701263284::0::1::::<><>::uid://feelhsu4kb7x::::res://Art/素材/end_item.glb
 Grid.gd::GDScript::-1::1700740402::0::1::::MyGrid<>MeshInstance3D<>::
-grid.tscn::PackedScene::6093494260126186975::1701246753::0::1::::<><>::res://Scenes/Grid.gd
-jump_item.tscn::PackedScene::7971408197655634765::1701246753::0::1::::<><>::
+grid.tscn::PackedScene::6093494260126186975::1701263284::0::1::::<><>::res://Scenes/Grid.gd
+jump_item.tscn::PackedScene::7971408197655634765::1701263284::0::1::::<><>::
 level_button.gd::GDScript::-1::1700637693::0::1::::LevelButton<>Button<>::
-level_button.tscn::PackedScene::4873780306890438727::1701246753::0::1::::<><>::res://Scenes/level_button.gd
+level_button.tscn::PackedScene::4873780306890438727::1701263284::0::1::::<><>::res://Scenes/level_button.gd
 monster.gd::GDScript::-1::1700660509::0::1::::MyMonster<>MyCharacter<>::
-monster.tscn::PackedScene::7537281463481156749::1701246753::0::1::::<><>::res://Scenes/monster.gd
+monster.tscn::PackedScene::7537281463481156749::1701263284::0::1::::<><>::res://Scenes/monster.gd<>uid://dimbu0o7f4r31::::res://Art/素材/enemy.glb
+tile.gdshader::Shader::-1::1701263284::0::1::::<><>::
 rotation_item.gd::GDScript::-1::1701241834::0::1::::RotationItemScene<>Node3D<>::
-rotation_item.tscn::PackedScene::2294860712827499356::1701246753::0::1::::<><>::res://Scenes/rotation_item.gd<>uid://cs3vqyitin3gn::::res://Art/素材/rotation_item_1.glb<>uid://dfj7lnwgpao5s::::res://Art/素材/rotation_item_2.glb
-tile.tscn::PackedScene::8430320049248758364::1701238973::0::1::::<><>::res://Tile.gd
+rotation_item.tscn::PackedScene::2294860712827499356::1701263284::0::1::::<><>::res://Scenes/rotation_item.gd<>uid://cs3vqyitin3gn::::res://Art/素材/rotation_item_1.glb<>uid://dfj7lnwgpao5s::::res://Art/素材/rotation_item_2.glb
+tile.tscn::PackedScene::8430320049248758364::1701263284::0::1::::<><>::res://Tile.gd<>res://Scenes/tile.gdshader
 ::res://Scripts/::1701241566
 EndItem.gd::GDScript::-1::1700658112::0::1::::EndItem<>MyItem<>::
 Item.gd::GDScript::-1::1700642961::0::1::::MyItem<>Node3D<>::
@@ -304,5 +308,5 @@ JumpItem.gd::GDScript::-1::1700582771::0::1::::JumpItem<>MyItem<>::
 Level.gd::GDScript::-1::1700739247::0::1::::MyLevel<>Node<>::
 RotationItem.gd::GDScript::-1::1701241566::0::1::::RotationItem<>MyItem<>::
 TileMap.gd::GDScript::-1::1701163547::0::1::::MyTileMap<>Node<>::
-::res://Themes/::1701246621
-root.tres::Theme::6953528066289158100::1701246621::0::1::::<><>::
+::res://Themes/::1701259964
+root.tres::Theme::6953528066289158100::1701259964::0::1::::<><>::

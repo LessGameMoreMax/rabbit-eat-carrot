@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cyalfjtkhij62"]
 
 [ext_resource type="Script" path="res://Scenes/Character.gd" id="1_64xho"]
-[ext_resource type="PackedScene" uid="uid://mdrm2elbjnw4" path="res://Art/史莱姆/Slime.glb" id="2_2f2m6"]
+[ext_resource type="PackedScene" uid="uid://de6kemvo7g4vg" path="res://Art/smile.glb" id="2_ovhmv"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_e6nsv"]
 size = Vector3(0.4, 1, 0.4)
@@ -17,5 +17,5 @@ collision_mask = 16
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.459877, 0)
 shape = SubResource("BoxShape3D_e6nsv")
 
-[node name="Slime" parent="." instance=ExtResource("2_2f2m6")]
-transform = Transform3D(2.605, 0, 0, 0, 2.605, 0, 0, 0, 2.605, 0, -0.359742, 0)
+[node name="smile" parent="." instance=ExtResource("2_ovhmv")]
+transform = Transform3D(2.605, 0, 0, 0, 2.605, 0, 0, 0, 2.605, 0, -0.36, 0)

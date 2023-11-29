@@ -1,13 +1,22 @@
-[gd_scene load_steps=10 format=3 uid="uid://dsdye0j6s323y"]
+[gd_scene load_steps=13 format=3 uid="uid://dsdye0j6s323y"]
 
 [ext_resource type="Script" path="res://Tile.gd" id="1_lc4vj"]
+[ext_resource type="Shader" path="res://Scenes/tile.gdshader" id="1_qrc8r"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_a4epc"]
 size = Vector3(10, 1, 10)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6wrty"]
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_6b8ih"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_ggi00"]
+noise = SubResource("FastNoiseLite_6b8ih")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vuoj5"]
 resource_local_to_scene = true
-albedo_color = Color(0.447059, 1, 0.521569, 0.878431)
+render_priority = 0
+shader = ExtResource("1_qrc8r")
+shader_parameter/color = null
+shader_parameter/noise = SubResource("NoiseTexture2D_ggi00")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_fip5o"]
 resource_local_to_scene = true
@@ -29,7 +38,7 @@ albedo_color = Color(0, 0, 0, 0.65098)
 
 [node name="Tile" type="MeshInstance3D"]
 mesh = SubResource("BoxMesh_a4epc")
-surface_material_override/0 = SubResource("StandardMaterial3D_6wrty")
+surface_material_override/0 = SubResource("ShaderMaterial_vuoj5")
 script = ExtResource("1_lc4vj")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
