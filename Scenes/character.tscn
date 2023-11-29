@@ -1,19 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://cyalfjtkhij62"]
+[gd_scene load_steps=4 format=3 uid="uid://cyalfjtkhij62"]
 
 [ext_resource type="Script" path="res://Scenes/Character.gd" id="1_64xho"]
-
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_r7r8c"]
-radius = 0.6
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_50w8l"]
-albedo_color = Color(0, 1, 1, 1)
+[ext_resource type="PackedScene" uid="uid://mdrm2elbjnw4" path="res://Art/史莱姆/Slime.glb" id="2_2f2m6"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_e6nsv"]
 size = Vector3(0.4, 1, 0.4)
 
 [node name="Character" type="MeshInstance3D"]
-mesh = SubResource("CapsuleMesh_r7r8c")
-surface_material_override/0 = SubResource("StandardMaterial3D_50w8l")
 script = ExtResource("1_64xho")
 
 [node name="Area3D" type="Area3D" parent="."]
@@ -23,3 +16,6 @@ collision_mask = 16
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.459877, 0)
 shape = SubResource("BoxShape3D_e6nsv")
+
+[node name="Slime" parent="." instance=ExtResource("2_2f2m6")]
+transform = Transform3D(2.605, 0, 0, 0, 2.605, 0, 0, 0, 2.605, 0, -0.359742, 0)

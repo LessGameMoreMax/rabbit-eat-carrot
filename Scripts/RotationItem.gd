@@ -2,13 +2,13 @@ extends MyItem
 
 class_name RotationItem
 
-var rotation_item_mesh: MeshInstance3D = null
+var rotation_item_scene: RotationItemScene = null
 
 var degree: float = -90.0
 
 func _ready():
-	rotation_item_mesh = load("res://Scenes/rotation_item.tscn").instantiate()
-	add_child(rotation_item_mesh)
+	rotation_item_scene = load("res://Scenes/rotation_item.tscn").instantiate()
+	add_child(rotation_item_scene)
 	return
 
 func _process(delta):
@@ -19,8 +19,10 @@ func PossesCharacter(character: MyCharacter):
 	var flag = 0
 	if degree < 0:
 		flag = 1
+		rotation_item_scene.ShowUnClock()
 	else:
 		flag = 0
+		rotation_item_scene.ShowClock()
 	if abs(character.speed.x) == flag:
 		character.speed = Vector3(character.speed.z, 0.0, character.speed.x)
 	else:

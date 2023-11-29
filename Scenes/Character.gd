@@ -33,6 +33,14 @@ func _process(delta):
 		Move(delta)
 	if should_jump:
 		Jump(delta)
+	if speed.x == 1:
+		rotation_degrees.y = 90.0
+	elif speed.x == -1:
+		rotation_degrees.y = -90.0
+	elif speed.z == 1:
+		rotation_degrees.y = 0.0
+	elif speed.z == -1:
+		rotation_degrees.y = -180.0
 	return
 	
 func SearchRoad():

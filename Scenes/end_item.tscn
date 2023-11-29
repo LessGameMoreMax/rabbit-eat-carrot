@@ -1,11 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://yfbmkuh1wgus"]
+[gd_scene load_steps=2 format=3 uid="uid://yfbmkuh1wgus"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_plm75"]
-size = Vector3(1.6, 2, 1.6)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7diem"]
-albedo_color = Color(1, 0, 1, 1)
+[ext_resource type="PackedScene" uid="uid://feelhsu4kb7x" path="res://Art/素材/end_item.glb" id="1_0wi07"]
 
 [node name="EndItem" type="MeshInstance3D"]
-mesh = SubResource("BoxMesh_plm75")
-surface_material_override/0 = SubResource("StandardMaterial3D_7diem")
+
+[node name="end_item" parent="." instance=ExtResource("1_0wi07")]
+transform = Transform3D(7.505, 0, 0, 0, 7.505, 0, 0, 0, 7.505, 0.137582, -0.144344, -0.0497155)
