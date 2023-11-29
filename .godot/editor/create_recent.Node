@@ -1,3 +1,5 @@
+WorldEnvironment
+MeshInstance3D
 AudioStreamPlayer
 Label
 Button
@@ -6,7 +8,6 @@ Control
 Timer
 CollisionShape3D
 Area3D
-MeshInstance3D
 StaticBody3D
 RigidBody3D
 CharacterBody3D

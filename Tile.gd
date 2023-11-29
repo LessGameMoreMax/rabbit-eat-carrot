@@ -17,9 +17,9 @@ var moveable: int = 1
 func _ready():
 	material = 	get_surface_override_material(0) as StandardMaterial3D
 	if IsMoveable():
-		material.albedo_color = Color.BLUE
+		material.albedo_color = Color.AQUAMARINE
 	else:
-		material.albedo_color = Color.DARK_SLATE_GRAY
+		material.albedo_color = Color.DIM_GRAY
 	return
 
 func _process(delta):
@@ -34,7 +34,7 @@ func PreSelected():
 	return
 	
 func CanclePreSelected():
-	material.albedo_color = Color.BLUE
+	material.albedo_color = Color.AQUAMARINE
 	return
 	
 func Selected(normal: Vector3):
@@ -44,15 +44,15 @@ func Selected(normal: Vector3):
 	return
 
 func CancelSelected():
-	material.albedo_color = Color.BLUE
+	material.albedo_color = Color.AQUAMARINE
 	return
 	
 func Covered():
-	material.albedo_color = Color.GREEN
+	material.albedo_color = Color.LIME
 	return
 	
 func CancelCovered():
-	material.albedo_color = Color.BLUE
+	material.albedo_color = Color.AQUAMARINE
 	return
 	
 func AddGrid(grid: MyGrid):

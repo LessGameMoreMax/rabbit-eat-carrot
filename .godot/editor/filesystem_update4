@@ -1,7 +1,7 @@
-res://root.tscn
-res://Themes/root.tres
-res://Scenes/character.tscn
 res://Scenes/tile.tscn
+res://Themes/root.tres
+res://root.tscn
+res://Scenes/character.tscn
 res://Scenes/end_item.tscn
 res://Scenes/rotation_item.tscn
 res://Scenes/jump_item.tscn
@@ -9,3 +9,4 @@ res://Scenes/monster.tscn
 res://Scenes/level_button.tscn
 res://Scenes/grid.tscn
 res://Scenes/audio_manager.tscn
+res://Tile.gd

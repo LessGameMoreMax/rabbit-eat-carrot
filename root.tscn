@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bt4gsgfglomvu"]
+[gd_scene load_steps=14 format=3 uid="uid://bt4gsgfglomvu"]
 
 [ext_resource type="Script" path="res://Initialize.gd" id="1_482ex"]
 [ext_resource type="Script" path="res://Scripts/Level.gd" id="1_ehhgx"]
@@ -14,6 +14,10 @@
 
 [sub_resource type="LabelSettings" id="LabelSettings_8svlt"]
 font_size = 40
+
+[sub_resource type="Environment" id="Environment_4dgj5"]
+background_mode = 1
+background_color = Color(0.772549, 0.796078, 0.898039, 0.356863)
 
 [node name="Root" type="Node3D"]
 script = ExtResource("1_482ex")
@@ -287,6 +291,9 @@ text = "策划 刘倚辰 朴冠宇
 vertical_alignment = 1
 
 [node name="AudioManager" parent="." instance=ExtResource("11_omt6g")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_4dgj5")
 
 [connection signal="pressed" from="UserInterface/MainMenu/Button" to="UserInterface" method="_on_button_pressed"]
 [connection signal="pressed" from="UserInterface/MainMenu/Button2" to="UserInterface" method="_on_button_2_pressed"]
